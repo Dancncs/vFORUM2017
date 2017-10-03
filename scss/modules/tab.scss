@@ -1,0 +1,40 @@
+.select_tab {
+	ul {
+		@include pie-clearfix;
+		border-bottom: 1px solid $inner-hover;
+	} // ul
+
+	li {
+		@include transition(all .35s ease-in-out);
+		// background-color: lighten($inner-hover, 10);
+		float: left;
+		margin-bottom: -2px;
+
+		a {
+			@include transition(all .35s ease-in-out);
+			color: $grey;
+			padding: 8px;
+		} // a
+
+		&:hover {
+			background-color: darken($inner-hover, 5);
+		} // :hover
+
+		&.active {
+			a {
+				background-color: #FFF;
+				border: 1px solid $inner-hover;
+				border-bottom-color: transparent;
+				color: $blue;
+			} // a
+		} // .active
+	} // li
+
+	@include susy-breakpoint($tablet, 6) {
+		li {
+			a {
+				padding: 5px 20px;
+			} // a
+		} // li
+	} // bp($tablet)
+} // .select_tab

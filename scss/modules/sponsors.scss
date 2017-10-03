@@ -1,0 +1,40 @@
+.sponsors {
+	figure {
+		border-bottom: 1px dashed $grey;
+		padding: 20px 0;
+
+		&:last-child {
+			border-bottom: 0;
+		} // :last-child
+
+		img {
+			margin-bottom: 20px 0;
+			width: span(2 of 4);
+		} // img
+
+		a {
+			color: $blue;
+			display: inline-block;
+		} // a
+	} // figure
+
+	@include susy-breakpoint($tablet, 6) {
+		figure {
+			img {
+				width: span(2);
+			} // img
+		} // figure
+	} // bp($tablet)
+
+	@include susy-breakpoint($desktop, 12) {
+		figure {
+			img {
+				@include span(3);
+			} // img
+
+			figcaption {
+				@include span(8 at 5);
+			} // figcaption
+		} // figure
+	} // bp($desktop)
+} // .sponsors

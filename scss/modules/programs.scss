@@ -1,0 +1,272 @@
+.programs {
+	.program_wrap {
+		@include pie-clearfix;
+		margin-bottom: 40px;
+
+		h2 {
+			font: {
+				family: 'Proximanova';
+				size: 28px;
+				// size: 42px;
+			} // font
+			margin-bottom: 20px;
+		} // h2
+		strong {
+			color: $dBlue;
+		} // strong
+
+		.benefits {
+			margin: 40px 0;
+
+			.benefits_group {
+				margin-bottom: 50px;
+
+				&:last-child {
+					margin-bottom: 0;
+				} //:last-child
+
+				h3 {
+					color: $blue;
+					font: {
+						family: 'Proximanova';
+						size: 20px;
+					} // font
+				} // h3
+
+				i {
+					float: left;
+					font-size: 36px;
+					margin-top: -8px;
+					padding-right: 15px;
+				} // i
+			} // .benefits_group
+		} // .benefits
+
+		@include susy-breakpoint($tablet, 6) {
+			.benefits {
+				@include pie-clearfix;
+				margin-bottom: 0;
+
+				.benefits_group {
+					@include gallery(3);
+				} // .benefits_group
+			} // .benefits
+		} // bp(6)
+	} // .program_wrap
+
+	.special {
+		.select_tab {
+			ul {
+				@include pie-clearfix;
+			} // ul
+
+			li {
+				background-color: transparent;
+				font-size: 11px;
+				line-height: 1;
+				text-align: center;
+				width: (100%/4);
+
+				&:nth-child(1) {
+					a {
+						padding-bottom: 28px;
+					} // a
+				} // :nth-child(1)
+
+				&:nth-child(3) {
+					a {
+						padding-bottom: 16px;
+					} // a
+				} // :nth-child(3)
+
+				&:nth-child(4) {
+					a {
+						padding-bottom: 28px;
+					} // a
+				} // :nth-child(4)
+
+				&:hover {
+					a {
+						color: $blue;
+					} // a
+				} // :hover
+			} // li
+
+			@include susy-breakpoint(387px) {
+				li {
+					&:nth-child(3) {
+						a {
+							padding-bottom: 4px;
+						} // a
+					} // :nth-child(3)
+
+					&:nth-child(4) {
+						a {
+							padding-bottom: 15px;
+						} // a
+					} // :nth-child(4)
+				} // li
+			} // bp(387px)
+
+			@include susy-breakpoint(475px) {
+				li {
+					font-size: 14px;
+
+					&:nth-child(1) {
+						a {
+							padding-bottom: 34px;
+						} // a
+					} // :nth-child(1)
+
+					&:nth-child(2) {
+						a {
+							padding-bottom: 20px;
+						} // a
+					} // :nth-child(2)
+
+					&:nth-child(3) {
+						a {
+							padding-bottom: 4px;
+						} // a
+					} // :nth-child(3)
+
+					&:nth-child(4) {
+						a {
+							padding-bottom: 18px;
+						} // a
+					} // :nth-child(4)
+				} // li
+			} // bp(475px)
+
+			@include susy-breakpoint(577px) {
+				li {
+					&:nth-child(3) {
+						a {
+							padding-bottom: 18px;
+						} // a
+					} // :nth-child(3)
+
+					&:nth-child(4) {
+						a {
+							padding-bottom: 32px;
+						} // a
+					} // :nth-child(4)
+				} // li
+			} // bp(577px)
+
+			@include susy-breakpoint($tablet) {
+				li {
+					font-size: 16px;
+
+					&:nth-child(1) {
+						a {
+							padding-bottom: 18px;
+						} // a
+					} // :nth-child(1)
+
+					&:nth-child(2) {
+						a {
+							padding-bottom: 0;
+						} // a
+					} // :nth-child(2)
+
+					&:nth-child(3) {
+						a {
+							padding-bottom: 0;
+						} // a
+					} // :nth-child(3)
+
+					&:nth-child(4) {
+						a {
+							padding-bottom: 18px;
+						} // a
+					} // :nth-child(4)
+				} // li
+			} // bp($tablet)
+		} // .select_tab
+
+		.special_containers {
+			padding: 20px 0;
+
+			strong {
+				color: $dBlue;
+			} // strong
+
+			ul {
+				list-style: disc;
+				margin-left: 20px;
+
+				li {
+					padding: 5px 0;
+				} // li
+
+				ul { // 2nd level
+					list-style: square;
+				} // ul
+			} // ul
+
+			h4 {
+				font-size: 1.25em;
+			} // h4
+
+			a {
+				color: $blue;
+				display: inline-block;
+			} // a
+
+			small {
+				font-size: 11px;
+			} // small
+		} // .special_containers
+	} // .special
+
+	.detail_wrap {
+		border-bottom: 1px dashed $inner-hover;
+		padding: 30px 0;
+
+		.location_date {
+			.country {
+				color: $blue;
+			} // .country
+
+			.date {
+				font-family: 'Proximanova Semibold';
+			} // .date
+		} // .location_date
+
+		.expert {
+			@include border-radius(3px);
+			@include box-shadow(0 -2px 2px rgba(#000, .35));
+			background: lighten($inner-hover, 15);
+			margin-bottom: 30px;
+			padding: 10px;
+
+			.expertise {
+				font: {
+					family: 'Proximanova Light';
+					size: 20px;
+				} // font
+			} // .expertise
+
+			img {
+				@include border-radius(50%);
+				margin-bottom: 20px;
+				width: span(3 of 6);
+				max-width: 180px;
+			} // img
+		} // .expert
+
+		@include susy-breakpoint($tablet, 6) {
+			.expert_wrap {
+				@include pie-clearfix;
+			} // .expert_wrap
+
+			.expert {
+				@include gallery(2);
+				@include border-radius(0);
+				@include box-shadow(none);
+				background-color: transparent;
+			} // .expert
+		} // bp($tablet)
+	} // .detail_wrap
+} // .programs

@@ -1,0 +1,603 @@
+<!DOCTYPE HTML>
+<html lang="en" class="no-js">
+<head>
+	<meta charset='UTF-8'>
+	<!-- www.phpied.com/conditional-comments-block-downloads/ -->
+	<!--[if IE]><![endif]-->
+
+	 <!-- please specify the pagetype -->
+  <meta name="pagetype" content="event"> 
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="Description" content="Hear about the latest trends and offerings from VMware at vFORUM 2017, Singapore">
+  <meta name="keywords" content="vforum,vmworld, vmware virtualization, server virtualization, desktop virtualization, public cloud, hybrid, cloud, virtual machine, vmware, vm ware, sddc, euc, nsx, vsan, vsphere">
+
+  <!-- VMware.com utilities - DO NOT REMOVE -->
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	<script type="text/javascript" src="http://campaign.vmware.com/js/forms/utilities/utilities.js"></script>
+	<script src="//tags.tiqcdn.com/utag/vmware/main/prod/utag.sync.js"></script>
+	<script src="//www.vmware.com/files/templates/inc/utag_data.js"></script>
+	<script src="//www.vmware.com/files/js/framework/mbox.js"></script>
+	<script type="text/javascript">utag_data.conFtent_system = "Eloqua";</script>
+	<script type="text/javascript">
+	    (function(a,b,c,d){
+	    a='//tags.tiqcdn.com/utag/vmware/eloqua/prod/utag.js';
+	    b=document;c='script';d=b.createElement(c);d.src=a;d.type='text/java'+c;d.async=true;
+	    a=b.getElementsByTagName(c)[0];a.parentNode.insertBefore(d,a);
+	    })();
+	</script>
+	<!-- VMware.com utilities - DO NOT REMOVE -->
+	<!-- VMware JS / Omniture-->
+  <script src="//www.vmware.com/files/templates/inc/s_code_vmw.js"></script> 
+  <script type="text/javascript"> 
+    s.dynamicAccountSelection=true; 
+    s.dynamicAccountList="vmwareau,vmwareglobal=info.vmware.com/content/apac_asean_"; 
+    s.dynamicAccountMatch=window.location.host+window.location.pathname; 
+    /************* DO NOT ALTER ANYTHING BELOW THIS LINE ! **************/ 
+    var s_code=s.t(); 
+    if(s_code) {document.write(s_code);} 
+  </script>
+
+  <link rel="shortcut icon" type="image/x-icon" href="http://www.vmware.com/favicon.ico">
+  <meta property="og:title" content="vForum 2017">
+  <meta property="og:description" content="VMware vForum 2017">
+  <meta property="og:type" content="vForum 2017">
+  <meta property="og:image" content="http://campaign.vmware.com/imgs/apac/templates/vFORUM2017/microsite/images/Social-Media.jpg">
+  <!--ls:begin[meta-vpath]--><meta name="vpath" content=""><!--ls:end[meta-vpath]-->
+  <!--ls:begin[meta-page-locale-name]--><meta name="page-locale-name" content=""><!--ls:end[meta-page-locale-name]-->
+  
+  <!--ls:begin[stylesheet]--><link type="text/css" href="http://campaign.vmware.com/imgs/apac/templates/vFORUM2017/microsite/css/jquery.jscrollpane.css" rel="stylesheet"><!--ls:end[stylesheet]-->
+  <!--ls:begin[stylesheet]--><link type="text/css" href="http://campaign.vmware.com/imgs/apac/templates/vFORUM2017/microsite/css/magnific-popup.css" rel="stylesheet"><!--ls:end[stylesheet]-->
+  
+  <!--ls:begin[script]--><script type="text/javascript" src="http://campaign.vmware.com/imgs/apac/templates/27936_APAC_vForum2015/master/js/jquery-migrate.min.js"></script><!--ls:end[script]-->
+  <!--ls:begin[script]--><script type="text/javascript" src="http://campaign.vmware.com/imgs/apac/templates/27936_APAC_vForum2015/master/js/modernizr.custom.js"></script><!--ls:end[script]-->
+ 	<!--ls:begin[script]--><script type="text/javascript" src="http://campaign.vmware.com/imgs/apac/templates/27936_APAC_vForum2015/master/js/jquery.cookie.js"></script><!--ls:end[script]-->
+  <!--ls:begin[script]--><script type="text/javascript" src="http://campaign.vmware.com/imgs/apac/templates/27936_APAC_vForum2015/master/js/holParse.js"></script><!--ls:end[script]-->
+  <!--ls:begin[script]--><script type="text/javascript" src="http://campaign.vmware.com/imgs/apac/templates/27936_APAC_vForum2015/master/js/tealium.head.js"></script><!--ls:end[script]-->
+  <!--ls:begin[script]--><script type="text/javascript" src="http://campaign.vmware.com/imgs/apac/templates/27936_APAC_vForum2015/master/js/jquery.magnific-popup.js"></script><!--ls:end[script]-->
+  
+  <!--ls:begin[head-injection]--><meta content='width=device-width, initial-scale=1' name='viewport'><!--ls:end[head-injection]-->
+
+  <!-- vmw validation -->
+	<script type="text/javascript">
+		var asset = getParameter("asset"),
+				assetdecode = decodeURI(asset);
+
+		function setCookie(c_name, value, exdays) {
+			var exdate = new Date();
+			exdate.setDate(exdate.getDate() + exdays);
+			var c_value = escape(value) + ((exdays == null) ? "" : "; expires=" + exdate.toUTCString());
+			document.cookie = c_name + "=" + c_value;
+		}
+
+		function isValidEmail(str) {
+			return (str.indexOf("@") > 0);
+		}
+
+		function fn_validateNumeric(thi, dec) {
+			if (((event.keyCode < 48) || (event.keyCode > 57)) && (event.keyCode != 46))
+				event.returnValue = false;
+			if (dec == "n" && event.keyCode == 46) {
+				event.returnValue = false;
+			} else {
+				if (event.keyCode == 46 && instr(thi.value, ".") >= 0)
+					event.returnValue = false;
+			}
+		}
+		errorLog = 0;
+
+		function Form1_Validator() {
+			var alertsay = "";
+			if (TheForm.firstName.value == "") {
+				alert("Please tell us your first name");
+				TheForm.firstName.focus();
+				errorLog = 1;
+				return false;
+			} else errorLog = 0;
+
+			if (TheForm.lastName.value == "") {
+				alert("Please tell us your last name");
+				TheForm.lastName.focus();
+				errorLog = 1;
+				return false;
+			} else errorLog = 0;
+
+			if (TheForm.company.value == "") {
+				alert("Please tell us your company name");
+				TheForm.company.focus();
+				errorLog = 1;
+				return false;
+			} else errorLog = 0;
+
+			if (!isValidEmail(TheForm.email.value)) {
+				alert("Please supply a valid email address");
+				TheForm.email.focus();
+				errorLog = 1;
+				return false;
+			} else errorLog = 0;
+
+			if (TheForm.businessPhone.value == "") {
+				alert("Please tell us your phone number");
+				TheForm.businessPhone.focus();
+				errorLog = 1;
+				return false;
+			} else errorLog = 0;
+
+			if (TheForm.mobilePhone.value == "") {
+				alert("Please tell us your mobile number");
+				TheForm.mobilePhone.focus();
+				errorLog = 1;
+				return false;
+			} else errorLog = 0;
+
+			if (TheForm.country.value == "" || TheForm.country.value == "Select One") {
+				alert("Please select a country");
+				TheForm.country.focus();
+				errorLog = 1;
+				return false;
+			} else errorLog = 0;
+
+			if (TheForm.city.value == "") {
+				alert("Please tell us your city");
+				TheForm.city.focus();
+				errorLog = 1;
+				return false;
+			} else errorLog = 0;
+
+			if (TheForm.state.value == "") {
+				alert("Please select us your state/province");
+				TheForm.state.focus();
+				errorLog = 1;
+				return false;
+			} else errorLog = 0;
+
+			if (TheForm.department.value == "" || TheForm.department.value == "Select One") {
+				alert("Please select a Department");
+				TheForm.department.focus();
+				errorLog = 1;
+				return false;
+			} else errorLog = 0;
+
+			if (TheForm.jobRole.value == "" || TheForm.jobRole.value == "[object Object]") {
+				alert("Please select a Job Role");
+				TheForm.jobRole.focus();
+				errorLog = 1;
+				return false;
+			} else errorLog = 0;
+
+			if (TheForm.title.value == "") {
+				alert("Please tell us your title");
+				TheForm.title.focus();
+				errorLog = 1;
+				return false;
+			} else errorLog = 0;
+
+			if (TheForm.industry.value == "" || TheForm.industry.value == "Select One") {
+				alert("Please tell us your industry");
+				TheForm.industry.focus();
+				errorLog = 1;
+				return false;
+			} else errorLog = 0;
+
+			if (TheForm.numberEmployeesGlobal.value == "" || TheForm.numberEmployeesGlobal.value == "Select One") {
+				alert("Please tell us the total number of employees in your company, globally");
+				TheForm.numberEmployeesGlobal.focus();
+				errorLog = 1;
+				return false;
+			} else errorLog = 0;
+
+			if (TheForm.relationship.value == "" || TheForm.relationship.value == "Select One") {
+				alert("Tell us your relationship with VMware?");
+				TheForm.relationshipVMware.focus();
+				errorLog = 1;
+				return false;
+			} else errorLog = 0;
+
+			if (TheForm.first_Attend_VMware_Event.value == "" || TheForm.first_Attend_VMware_Event.value == "Select One") {
+				alert("Is this your first time attending a VMware event?");
+				TheForm.first_Attend_VMware_Event.focus();
+				errorLog = 1;
+				return false;
+			} else errorLog = 0;
+
+			document.TheForm.submit();
+			setEmailCookie('emailaddy', TheForm.email.value, 5);
+			setCookie('formcompleted', 'VMwarecookie', 5);
+		}
+
+		function setEmailCookie(c_name, value, expiredays) {
+			var exdate = new Date();
+
+			// Expire email cookie 30 days
+			expiredays = 30;
+			exdate.setDate(exdate.getDate() + expiredays);
+
+			document.cookie = c_name + "=" + escape(value) + ((expiredays == null) ? "" : "; expires=" + exdate.toUTCString());
+		}
+
+		function trim(text) {
+			text.value = text.value.replace(/[\n\t\r]/g, ""); /* remove carriage-return, linefeed, and tabs */
+			text.value = text.value.replace(/^\s*/, ""); /* remove leading whitespace */
+			text.value = text.value.replace(/\s*$/, ""); /* removing trailing whitespace */
+			text.value = text.value.replace(/\\./g, ""); /* remove any \x character combination */
+			text.value = text.value.replace(/\s*@\s*/g, "@"); /* remove whitespace adjacent to '@' chars */
+			text.value = text.value.replace(/  */g, " "); /* replace multiple spaces with one */
+		}
+	</script>
+	<!-- Error checking close -->
+
+	<script language="javascript" type="text/javascript"> 
+		function Show(obj) {
+			var oDiv = document.getElementById(obj);
+			if(oDiv != null) oDiv.style.display = '';
+		}
+
+		function Hide(obj) {
+			var oDiv = document.getElementById(obj);
+			if(oDiv != null) oDiv.style.display = "none";
+		}
+
+		function Toggle(obj) {
+			var oDiv = document.getElementById(obj);
+			if(oDiv != null) {
+				if(oDiv.style.display == "none") {
+					oDiv.style.display = '';
+				} else {
+					oDiv.style.display = 'none';
+				}
+			}
+		}
+	</script>
+
+	<script language="javascript" type="text/javascript">
+		function getUrlVars() {
+			var vars = {};
+			var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function(m,key,value) {
+				vars[key] = value;
+			});
+			return vars;
+		}
+		var elq = getUrlVars()["elq"];
+	</script>
+
+	<link rel="stylesheet" href="css/screen.css" />
+
+	<!--[if lt IE 9]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
+	<title>Register | vFORUM 2017</title>
+
+</head>
+
+<body>
+
+	<header>
+		<div class="masthead">
+			<div class="themeVideo">
+				<video playsinline autoplay loop poster="images/theme_screen.jpg" id="hero">
+					<source src="videos/theme_video.mp4" type="video/mp4">
+					<source src="videos/theme_video.webm" type="video/webm">
+				</video>
+			</div>
+			<div class="ls-area socialLinks" id="ls-row-1-area-3">
+        <div class="ls-area-body" id="ls-gen24058353-ls-area-body">
+          <div class="ls-cmp-wrap ls-1st" id="w1434150985931"><!--ls:begin[component-1434150985931]-->
+            <div class="iw_component" id="1434150985931">
+              <div>
+                <ul>
+                  <li><a href="https://twitter.com/hashtag/vforumsg?elqTrackId=a9a0db34681c4e67976b1c53943e4db0"><img alt="VMworld on Twitter" src="http://campaign.vmware.com/imgs/apac/templates/vFORUM2017/microsite/images/icons_tweeter.png"></a></li>
+                  <li><a href="https://www.facebook.com/vmwaresg?fref=nf&elqTrackId=fc06cc8e091345d3957087f7c76967c7"><img alt="VMworld Facebook Page" src="http://campaign.vmware.com/imgs/apac/templates/vFORUM2017/microsite/images/icons_fb.png"></a></li>
+                  <li><a href="http://www.vmware.com/?elqTrackId=76f232089f6447b1a2d336240dca8d52"><img alt="VMworld Blog" src="http://campaign.vmware.com/imgs/apac/templates/vFORUM2017/microsite/images/icons_blog.png"></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+		</div>
+		<div class="navbar">
+			<div class="toggleWrap">
+				<div class="toggle">
+					<div class="top"><span></span></div>
+					<div class="center"><span></span></div>
+					<div class="bottom"><span></span></div>
+				</div>
+			</div><!-- End of toggleWrap -->
+			<div class="wrap">
+				<nav class="main_nav">
+					<ul class="main_nav_wrap">
+						<li>
+							<a href="#">Overview</a>
+							<ul>
+								<li><a href="index.html">vForum 2017</a></li>
+								<li><a href="why-you-should-attend.html">Why You Should Attend</a></li>
+								<li><a href="refer-a-colleague.html">Refer a Colleagus</a></li>
+							</ul>
+						</li>
+						<li><a href="agenda.html">Agenda</a></li>
+						<li class="active"><a href="register.html">Register</a></li>
+						<li><a href="sponsor.html">Sponsors</a></li>
+						<li><a href="social.html">Social Media</a></li>
+						<li><a href="programs.html">Programs</a></li>
+					</ul>
+					<a class="navbar-brand" href="http://www.vmware.com/?elqTrackId=f09c433f047d48d490479b3220b2be21"></a>
+				</nav><!-- End of main_nav -->
+			</div>
+		</div><!-- End of navbar -->
+	</header>
+
+	<div class="pageWrap">
+
+		<!-- Sidebar -->
+		<section class="sidebar">
+			<div class="sidebarWrap">
+				<div class="sidebarHandle slideOut"></div>
+				<nav class="contest slideOut">
+					<div class="sidebarTop"></div>
+					<ul>
+	          <li>
+	            <center>
+	              <img src="http://campaign.vmware.com/imgs/apac/templates/vFORUM2017/microsite/images/WEB_banner_Att_SEAK.jpg" width="130" alt="Register and Attend to Win Attractive Prices. * Terms and conditions apply">
+	              <script language="JavaScript" type="text/javascript">document.write("<a href=http://learn.vmware.com/APAC_ASEAN_SG_vForum_2017_Registration?src=" +getParameter('src')+"&elq="+getParameter('elq')+"&cid="+getParameter('cid')+" alt=''><img src='http://campaign.vmware.com/imgs/apac/templates/vFORUM2017/microsite/images/vf17-btn-regnow.png' alt='Register Now' title='Register Now' width='130'></a>");</script>
+	            </center>
+	          </li>
+	          <li>
+	            <center>
+	              <img src="http://campaign.vmware.com/imgs/apac/templates/vFORUM2017/microsite/images/WEB_banner_rac_SEAK.jpg" alt="Increase your chances with every referral. * Terms and conditions apply" border="0" width="130">
+	              <script language="JavaScript" type="text/javascript">document.write("<a href=http://learn.vmware.com/APAC_ASEAN_SG_vForum_2017_Refer_Colleague?src=" +getParameter('src')+"&elq="+getParameter('elq')+"&cid="+getParameter('cid')+" alt=''><img src='http://campaign.vmware.com/imgs/apac/templates/vFORUM2017/microsite/images/vf17-btn-refernow.png' alt='Refer Now' title='Refer Now' width='130'></a>");</script>
+	            </center>
+	          </li>
+	        </ul>
+				</nav>
+			</div>
+
+		</section> <!-- End of sidebar -->
+
+		<!-- Intro -->
+		<section>
+			<div class="wrap">
+				<header class="content-header">
+					<h1 class="page_title">Registration</h1>
+					<div class="call-to-action">
+						<script language="javascript" type="text/javascript">document.write("<a class='register_now' href=http://learn.vmware.com/APAC_ASEAN_SG_vForum_2017_Registration?src=" +getParameter('src')+"&elq="+getParameter('elq')+"&cid="+getParameter('cid')+">REGISTER NOW!</a>");</script>
+					</div>
+				</header>
+
+				<div class="registration-form">
+
+					<form action="https://s279193683.t.eloqua.com/e/f2" method="post" name="TheForm" id="TheForm" onsubmit="return Form1_Validator(this)" dfield="longForm">
+						<!-- Hidden fields for pre-populating values -->
+						<input type="hidden" id="pp_Salutation" name="pp_Salutation" value="">
+						<input type="hidden" id="pp_Country" name="pp_Country" value="">
+						<input type="hidden" id="pp_role_type" name="pp_role_type" value="">
+						<input type="hidden" id="pp_jobrole" name="pp_jobrole" value="">
+						<input type="hidden" id="pp_State" name="pp_State" value="">
+						<input type="hidden" id="pp_Industry" name="pp_Industry" value="">
+						<input type="hidden" id="pp_number_employees" name="pp_number_employees" value="">
+						<input type="hidden" id="pp_number_employees_in_country" name="pp_number_employees_in_country" value="">
+						<input type="hidden" id="pp_number_servers" name="pp_number_servers" value="">
+						<input type="hidden" id="pp_number_desktops" name="number_desktops" value="">
+						<input type="hidden" id="pp_defined_budget" name="pp_defined_budget" value="">
+						<input type="hidden" id="pp_server_refresh" name="pp_server_refresh" value="">
+						<input type="hidden" id="pp_desktop_refresh" name="pp_desktop_refresh" value="">
+						<input type="hidden" id="pp_visitor_type" name="pp_visitor_type" value="">
+						<input type="hidden" id="pp_language" name="pp_language" value="">
+						<input value="279193683" type="hidden" name="elqSiteID">
+						<input type="hidden" name="os" id="os" value="APAC vFORUM 2017">
+						<input type="hidden" name="osa" id="osa" value="APAC vFORUM 2017">
+						<input type="hidden" name="osp" id="osp" value="APAC vFORUM 2017">
+					  <input type="hidden" id="db_duns_num" name="db_duns_num" value="">
+					  <input type="hidden" id="db_company_name" name="db_company_name" value="">
+					  <input type="hidden" id="db_marketing_alias" name="db_marketing_alias" value="">
+					  <input type="hidden" id="db_industry" name="db_industry" value="">
+					  <input type="hidden" id="db_sub_industry" name="db_sub_industry" value="">
+					  <input type="hidden" id="db_revenue_range" name="db_revenue_range" value="">
+					  <input type="hidden" id="db_employee_range" name="db_employee_range" value="">
+					  <input type="hidden" id="db_street_address" name="db_street_address" value="">
+					  <input type="hidden" id="db_city" name="db_city" value="">
+					  <input type="hidden" id="db_state" name="db_state" value="">
+					  <input type="hidden" id="db_zip" name="db_zip" value="">
+					  <input type="hidden" id="db_country" name="db_country" value="">
+					  <input type="hidden" id="db_demandbase_sid" name="db_demandbase_sid" value="">
+					  <input type="hidden" id="db_ip" name="db_ip" value="">
+					  <input type="hidden" id="db_data_source" name="db_data_source" value="">
+					  <input type="hidden" id="db_phone" name="db_phone" value="">
+					  <input type="hidden" id="db_country_name" name="db_country_name" value="">
+					  <input type="hidden" id="db_primary_sic" name="db_primary_sic" value="">
+					  <input type="hidden" id="db_employee_count" name="db_employee_count" value="">
+					  <input type="hidden" id="db_audience" name="db_audience" value="">
+					  <input type="hidden" id="db_audience_segment" name="db_audience_segment" value="">
+					  <input type="hidden" id="db_web_site" name="db_web_site" value="">
+					  <input type="hidden" name="C_SFDC_EmailOptOut1" value="">
+						<!-- ASEAN -->
+						<input type="hidden" name="elqFormName" value="16Q4_38518_APAC_ASEAN_SG_vForum_Reg">
+						<script langaue="javascript">document.write("<input type='hidden' name='src' value='" + getParameter('src') + "'>");</script>
+						<script langaue="javascript">document.write("<input type='hidden' name='elq' value='" + getParameter('elq') + "'>");</script>
+						<script type="text/javascript">document.write("<input type='hidden' name='redirect' value='http://learn.vmware.com/APAC_ASEAN_SG_vForum_Registration_Thankyou?src=" + getParameter('src') + "&ossrc=" + getParameter('ossrc') + "&elq=" + getParameter('elq') + "&xyz=" + getParameter('xyz') + "'>");</script>
+
+						<div class="field">
+							<label>First Name* :</label>
+							<input type="text" tabindex="2" class="required text" name="firstName" id="firstName" onblur="trim(document.TheForm.firstName)" value="<span class=eloquaemail>First_Name___Form_Only1</span>">
+						</div>
+						<div class="field">
+							<label>Last Name* :</label>
+							<input type="text" tabindex="3" class="required text" name="lastName" id="lastName" onblur="trim(document.TheForm.lastName)" value="<span class=eloquaemail>lastName</span>">
+						</div>
+						<div class="field">
+							<label>Company/Organization* :</label>
+							<input type="text" tabindex="4" class="required text" name="company" onblur="trim(document.TheForm.company)" value="<span class=eloquaemail>company</span>">
+						</div>
+						<div class="field">
+							<label>Work Email* :</label>
+							<input type="text" tabindex="5" class="required email input-validation-error" name="email" id="email" onblur="trim(document.TheForm.email)" value="<span class=eloquaemail>EmailAddress</span>">
+						</div>
+						<div class="field">
+							<label>Business Phone* :</label>
+							<input type="text" tabindex="6" class="required text phone" name="businessPhone" id="businessPhone" onblur="trim(document.TheForm.businessPhone)" onkeypress="fn_validateNumeric(this,'n')" value="<span class=eloquaemail>Business_Phone1</span>">
+						</div>
+						<div class="field">
+							<label>Mobile Phone* :</label>
+							<input type="text" tabindex="6" class="required text phone" name="mobilePhone" id="mobilePhone" onblur="trim(document.TheForm.mobilePhone)" onkeypress="fn_validateNumeric(this,'n')" value="">
+						</div>
+						<div class="field">
+							<label>Country* :</label>
+							<!-- ASEAN -->
+							<select iso_code_id="isoCode" tabindex="7" asterisk_id="stateAsterisk,zipAsterisk" postal_code_id="zip" state_id="state_container" city_id="city_container" zip_id="zip_container" field="country_asean_full" name="country" id="country" class="required select">
+								<option selected="selected" value="">Loading...</option>
+							</select>
+							<input type="hidden" name="isoCode" id="isoCode">
+						</div>
+						<div class="field">
+							<label>City* :</label>
+							<span id="city_container">
+								<input type="text" tabindex="8" class="required text" name="city" id="city" onblur="trim(document.TheForm.city)" value="<span class=eloquaemail>city</span>">
+							</span>
+						</div>
+						<div class="field">
+							<label>State/Province* :</label>
+							<span id="state_container">
+								<input type="text" tabindex="9" class="required select" id="state" name="state" value="">
+							</span>
+						</div>
+						<div class="field">
+							<label>Department* :</label>
+							<select name="department" tabindex="10" id="department" field="department" job_role_id="jobRole" focus_id="contact_job_focus" position_level_id="contact_jobRole" class="required select">
+								<option value="">Loading...</option>
+							</select>
+						</div>
+						<div class="field">
+							<label>
+								Job Role* :<br>
+								<span style="font-weight:normal;"> (Please select Department first)</span>
+							</label>
+							<select name="jobRole" tabindex="11" id="jobRole" field="jobrole" class="required select">
+								<option value="">--</option>
+							</select>
+						</div>
+						<div class="field">
+							<label>Job Title* :</label>
+							<input type="text" tabindex="12" class="required text" name="title" id="title" onblur="trim(document.TheForm.title)" value="">
+						</div>
+						<div class="field">
+							<label>Industry* :</label>
+							<select name="industry" tabindex="13" class="required select" id="industry" field="industry">
+								<option value="">Loading...</option>
+							</select>
+						</div>
+						<div class="field">
+							<label>Number of employees, globally?* :</label>
+							<select tabindex="14" class="required select" id="numberEmployeesGlobal" name="numberEmployeesGlobal" field="numberemployeesglobal">
+								<option selected="selected" value="">Loading...</option>
+							</select>
+						</div>
+						<div class="field">
+							<label>Relationship with VMware?* :</label>
+							<select name="relationship" tabindex="15" id="relationship" field="relationship" class="required select">
+								<option value="Select One" selected>Select One</option>
+								<option value="" style="background-color:#3CF">------VMware Customers------</option>
+								<option value="Customer">Customer</option>
+								<option value="Prospective Customer">Prospective Customer</option>
+								<option value="User Only of Free VMware Products">User Only of Free VMware Products</option>
+								<option value="" style="background-color:#3CF">------VMware Partners------</option>
+								<option value="VMware Partner (Internal use of VMware products)">VMware Partner (Internal use of VMware products)</option>
+								<option value="Prospective VMware Partner">Prospective VMware Partner</option>
+								<option value="Corporate Reseller">Corporate Reseller</option>
+								<option value="Distributor">Distributor</option>
+								<option value="OEM">OEM</option>
+								<option value="Consulting and System Integrator/Outsourcer">Consulting and System Integrator/Outsourcer</option>
+								<option value="Solution Provider">Solution Provider</option>
+								<option value="Technology Alliance Partner">Technology Alliance Partner</option>
+								<option value="Service Provider">Service Provider</option>
+								<option value="VMware Authorized Training Centers (VATCs)">VMware Authorized Training Centers (VATCs)</option>
+								<option value="" style="background-color:#3CF">------Others------</option>
+								<option value="Media / Analyst">Media / Analyst</option>
+								<option value="VMware Employee">VMware Employee</option>
+							</select> 
+						</div>
+						<div class="field">
+							<label>Is this your first time attending a VMware event?* :</label>
+							<select name="first_Attend_VMware_Event" tabindex="16" id="first_Attend_VMware_Event" field="first_Attend_VMware_Event" class="required select">
+								<option value="Select One" selected>Select One</option>
+								<option value="Yes">Yes</option>
+								<option value="No">No</option>
+							</select> 
+						</div>
+						<div class="field">
+		          <label>Which of this business theme most resonates to your organization's business priorities?* :</label>
+		          <div class="checkbox">
+		          	<input name="dig_transf" type="checkbox" value="Modernize Data Centers"> <p>Modernize Data Centers</p> <br>
+		          	<input name="dig_transf" type="checkbox" value="Integrate Public Cloud"> <p>Integrate Public Cloud</p><br>
+		          	<input name="dig_transf" type="checkbox" value="Transform Security"> <p>Transform Security</p> <br>
+		          	<input name="dig_transf" type="checkbox" value="Empower Digital Workspace"> <p>Empower Digital Workspace</p>
+		          </div>
+		        </div>
+		        <div style="clear:both"></div><br>
+						<div class="field">
+							<table width="100%" cellspacing="0" cellpadding="0" border="0">
+								<tr>
+									<td>
+										<input type="checkbox" size="50" value="Yes" id="optin" name="optin" checked="checked">
+									</td>
+									<td>Yes, I would like to receive email communications related to VMware.</td>
+								</tr>
+								<tr>
+									<td colspan="2">I understand that any information I provide will be treated in accordance with the VMware <a target="_blank" href="http://www.vmware.com/help/privacy.html?elqTrackId=f6f9e24124794843b0dc1413bb6760e4&amp;elqaid=1815&amp;elqat=2">Privacy Policy</a>.<br>
+									</td>
+								</tr>
+							</table>
+						</div>
+						<center>
+							<input type="image" src="http://campaign.vmware.com/imgs/apac/templates/27936_APAC_vForum2014/master_template/Asean/images/vf14-btn-register.png">
+						</center>
+					</form>
+				</div>
+			</div>
+		</section> <!-- End of Intro -->
+	</div> <!-- End of pageWrap -->
+
+	<footer>
+		<div>
+			<div class="wrap">
+				<div class="footerMenu">
+					<center>
+						<span class="footxt">
+							Terms and Conditions: 
+							<script language="JavaScript" type="text/javascript">document.write("<a style='color:#FFFFFF;text-decoration:underline;' href=http://learn.vmware.com/APAC_ASEAN_SG_vForum_2017_Attend_Win_Terms_Conditions?src=" +getParameter('src')+"&elq="+getParameter('elq')+"&cid="+getParameter('cid')+" > Attend to Win Lucky Draw</a>");</script>
+						</span> | 
+						<span class="footxt">
+							Terms and Conditions: <script language="JavaScript" type="text/javascript">document.write("<a style='color:#FFFFFF;text-decoration:underline;' href=http://learn.vmware.com/APAC_ASEAN_SG_vForum_2017_Refer_Colleague_Terms_Conditions?src=" +getParameter('src')+"&elq="+getParameter('elq')+"&cid="+getParameter('cid')+" >Refer a Colleague Lucky Draw</a>");</script>
+						</span><br>
+						<span class="footxt">
+							VMware reserves the sole right and discretion to refuse entry to, or to reject anyone from, this event or premises for any reason and without any liability whatsoever.<br>
+							Copyright &copy; 2017 VMware, Inc. All rights reserved. 
+							<a href="http://www.vmware.com/company/contact.html?elqTrackId=1ccd1e82df9a4799b40fa164e578c1d3" target="_blank">
+								Contact Us
+							</a> | 
+							<a href="http://www.vmware.com/legal.html?elqTrackId=1b74c1a843c448e6922437278a099147" target="_blank">
+								Terms of Use
+							</a> | 
+							<a href="http://www.vmware.com/help/privacy.html?elqTrackId=f9f8d7eb41f5447ab03edb1d2537744c" target="_blank">
+								Privacy
+							</a> | 
+							<a href="http://www.vmware.com/help/accessibility.html?elqTrackId=f4b3aeb4534240c7a67133ff1021739c" target="_blank">
+								Accessibility
+							</a> | 
+							<a href="http://www.vmware.com/site_index.html?elqTrackId=73e45730c30c4606bbefc2c5d8459c96" target="_blank">
+								Site Index
+							</a> | 
+							<a href="http://www.vmware.com/help/?elqTrackId=415aaeeefae4452797a976692e4e3ce5" target="_blank">
+								Help
+							</a>
+						</span>
+					</center>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<script src="js/cement.js"></script>
+	<script src="js/nav.js"></script>
+	<script src="js/script_home.js"></script>
+
+</body>
+</html>

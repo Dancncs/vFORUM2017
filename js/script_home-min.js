@@ -1,0 +1,1 @@
+jQuery(document).ready(function($){$(".gallery_wrap").cement({columns:5,columnMinWidth:175}).show();var e=$("#clock").FlipClock(3888e3,{clockFace:"DailyCounter",countdown:!0});$(".open-popup-link").magnificPopup({delegate:"a",type:"image",gallery:{enabled:!0}})});

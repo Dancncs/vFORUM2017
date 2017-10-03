@@ -1,0 +1,120 @@
+.agenda {
+	table {
+		@include transition(all .35s ease-in-out);
+
+		tr {
+			border-bottom: 1px solid $inner-hover;
+		} // tr
+
+		td {
+			display: block;
+			font-size: 0.85em;
+			line-height: 1;
+			padding: 8px;
+			vertical-align: middle;
+			width: 100%;
+
+			&:first-child {
+				font-family: 'Proximanova Semibold';
+			} // :first-child
+		} // td
+
+		@include susy-breakpoint($tablet, 6) {
+			td {
+				display: inline-block;
+				font-size: 1em;
+				line-height: 1.5em;
+
+				&:first-child {
+					width: span(2);
+				} // :first-child
+
+				&:last-child {
+					width: span(4 last);
+				} // :last-child
+			} // td
+		} // bp($tablet)
+	} // table
+
+	.session {
+		h2 {
+			color: #FFF;
+			cursor: pointer;
+			font-size: 1em;
+			line-height: 1;
+			padding: 10px 5px;
+			position: relative;
+			width: 100%;
+
+			&:after {
+				@include transform(translateY(-50%));
+				border-left: 5px solid transparent;
+				border-right: 5px solid transparent;
+				border-top: 5px solid #FFF;
+				content: '';
+				display: inline-block;;
+				position: absolute;
+				right: 5px;
+				top: 50%;
+				width: 0;
+				height: 0;
+			} // :after
+
+			&.active {
+				&:after {
+					border-left: 5px solid transparent;
+					border-right: 5px solid transparent;
+					border-bottom: 5px solid #FFF;
+					border-top: none;
+				} // :after
+			} // .active
+
+			&.s1 {
+				background: $teal;
+			} // .s1
+
+			&.s2 {
+				background: $plum;
+			} // .s2
+
+			&.s3 {
+				background: $blue;
+			} // .s3
+
+			&.s4 {
+				background: $green;
+			} // .s4
+
+			&.s5 {
+				background: $dBlue;
+			} // .s5
+
+			&.s6 {
+				background: $lGreen;
+			} // .s6
+		} // h2
+
+		@include susy-breakpoint($tablet, 6) {
+			h2 {
+				text-align: center;
+			} // h2
+
+			table {
+				td {
+					font-family: 'Proximanova';
+					width: 100%;
+				} // td
+			} // table
+		} // bp($tablet)
+	} // .session
+
+	.open {
+		table {
+			tr {
+				&:nth-child(even) {
+					background: lighten($inner-hover, 15);
+				} // :nth-child(even)
+			} // tr
+		} //table
+	} // .open
+} // .agenda

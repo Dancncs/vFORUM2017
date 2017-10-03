@@ -1,0 +1,50 @@
+// Susy and breakpoint
+
+$susy: (
+	columns 					: 6,
+	container 				: 1024px,
+	global-box-sizing : border-box,
+	debug 						: (
+		// image              : show,
+		color              : rgba(#A20E37, .15)
+		)
+	);
+	
+@include border-box-sizing;
+
+$narrow 	          : 320px;
+$tablet 	          : 768px;
+$desktop 	          : 980px;
+$wide 	            : 1280px;
+  
+  
+// Typo  
+  
+$base-font-size 	  : 16px;
+$base-line-height   : 1.5em;
+@include establish-baseline;
+
+$fontFamily         : 'Proximanova', arial, helvetica, sans-serif;
+$headFont           : 1.5em/1.5em 'Proximanova Semibold', $fontFamily;
+$quoteFont          : 2em/2em 'Proximanova Light', $fontFamily;
+$mainFont           : 1em/1.5em $fontFamily;
+
+
+// Color Swatches
+$teal   				    : #039D9A;
+$dTeal              : #007B82;
+$Gold 					    : #E3B20E;
+$dGold 					    : #D06F00;
+$orange             : #ED7D07;
+$dOrange            : #982304;
+$green              : #00694A;
+$lGreen             : #86B938;
+$dGreen             : #76BC00;
+$blue               : #0095D3;
+$dBlue              : #1D4077;
+$crimson            : #D54C3B;
+$dCrimson           : #880034;
+$plum               : #804E9E;
+$dPlum              : #4D1B9B;
+$grey               : #696968;
+$inner-hover        : #CCC;

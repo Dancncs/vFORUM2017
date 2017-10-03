@@ -1,0 +1,1 @@
+jQuery(document).ready(function(){var a=$(".select_tab a");$(".group").hide(),$(".show").show(),a.click(function(t){t.preventDefault(),t.stopPropagation(),a.parent().removeClass("active"),$(this).parent().addClass("active");var e="#"+$(this).data("target");$('.group:not("+target+")').hide(),$(e).show(),$(".group").removeClass("show"),$(e).addClass("show")})});

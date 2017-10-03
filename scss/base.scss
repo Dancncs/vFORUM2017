@@ -1,0 +1,115 @@
+body {
+	font: $mainFont;
+	color: $grey;
+} //body
+
+#{headings()} {
+	font: $headFont;
+	margin: 0;
+} //headings
+
+h1 {
+	font-size: 2.827em;
+} // h1
+
+h2 {
+	font-size: 1.999em;
+} // h2
+
+h3 {
+	font-size: 1.414em;;
+} // h3
+
+h4 {
+	font-size: 1.35em;
+} // h4
+
+ul, ol {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+} // ul, ol
+
+figure {
+	margin: 0;
+	overflow: hidden;
+} // figure
+
+p {
+	margin: 0 0 20px;
+} //p
+
+a {
+	text-decoration: none;
+	display: block;
+} // a
+
+video {
+	display: block;
+	width: 100%;
+} // video
+
+img {
+	display: block;
+	width: 100%;
+	height: auto;
+} // img
+
+strong, b {
+	font-family: "Proximanova Semibold";
+} // strong
+
+table {
+	border: 0;
+	border-collapse: collapse;
+	outline: 0;
+	width: 100%;
+} // table
+
+.register_now {
+	@include transition(all .35s ease-in-out);
+	@include border-radius(3px);
+	@include background(linear-gradient($blue, $dBlue));
+	border-bottom: 2px solid $dTeal;
+	color: #FFF;
+	font-family: 'Proximanova Semibold';
+	padding: 5px 10px;
+	text-align: center;
+	// width: 180px;
+	position: relative;
+
+	&:after {
+		background: {
+			image: image-url('arrow.png', false, false);
+			repeat: no-repeat;
+			size: 100%
+		}
+		content: '';
+		display: block;
+		float: right;
+		margin-top: 3px;
+		margin-left: 15px;
+		width: 16px;
+		height: 16px;
+	} // :after
+
+	@include susy-breakpoint($tablet) {
+		float: left;
+		padding: 10px 20px;
+		width: auto;
+	} // bp($tablet)
+} // .register_now
+
+.wrap {
+	@include container();
+	padding-left: 15px;
+	padding-right: 15px;
+
+	@include susy-breakpoint($tablet, 6) {
+		@include show-grid();
+	}
+
+	@include susy-breakpoint($desktop, 12) {
+		@include show-grid();
+	}
+} // .wrap

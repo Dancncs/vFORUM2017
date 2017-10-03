@@ -1,0 +1,74 @@
+.registration-form {
+	.field {
+		border-bottom: 1px dashed $grey;
+		padding: 10px 0;
+	} // .field
+
+	label, input, select {
+		display: block;
+		width: 100%;
+	} // label
+
+	label {
+		font-family: 'Proximanova Bold';
+	} // label
+
+	input {
+		border: 1px solid $inner-hover;
+		background: 0;
+		padding: 5px;
+
+		&[type=image] {
+			border: 0;
+			padding-top: 20px;
+			width: auto;
+		} // [type=image]
+	} // input
+
+	@include susy-breakpoint($tablet, 6) {
+		.field {
+			@include pie-clearfix;
+
+			p {
+				margin: 0 0 0 10px;
+				float: left;
+			} // p
+
+			a {
+				color: $blue;
+				display: inline-block;
+			} // a
+		} // field
+
+		label {
+			@include span(2);
+		} // label
+
+		input, select, .checkbox {
+			@include span(4 last);
+		} // input, select, .checkbox
+
+		input {
+			&[type=checkbox] {
+				display: inline-block;
+				float: left;
+				margin-top: 5px;
+				width: auto;
+			} // [type="checkbox"]
+
+			&[type=image] {
+				float: none;
+			} // [type=image]
+		} // input
+	} // bp($tablet)
+
+	@include susy-breakpoint($desktop, 12) {
+		label {
+			@include span(4);
+		} // label
+
+		input, select, .checkbox {
+			@include span(8 last);
+		} // input, select, .checkbox
+	} // bp($desktop)
+} // .registration-form

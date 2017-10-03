@@ -1,0 +1,86 @@
+.refer_form {
+	.refer_row  {
+		// border-bottom: 1px dashed $inner-hover;
+		padding: 20px 0 0;
+
+		&:last-child {
+			border: 0;
+		} // :last-child
+
+		#rac-header {
+			background: $grey;
+			color: #FFF;
+			font-size: 20px;
+			padding: 5px 10px;
+		} // #rac-header
+
+		.field {
+			@include pie-clearfix;
+			padding: 10px 5px;
+		} // .field
+
+		@include susy-breakpoint($tablet, 6) {
+			@include pie-clearfix;
+
+			.field {
+				@include span(2);
+
+				&:last-child {
+					@include span(2 last);
+				} // :last-child
+			} // .field
+
+			&.sender_field {
+				.field {
+					@include nested(12) {
+						@include span(4);
+
+						&:nth-child(4) {
+							@include span(4 last);
+						} // :last-child
+					} // nested(12)
+				} // .field
+			} // .sender_field
+		} // bp($tablet)
+	} // .refer_row 
+
+	input, textarea {
+		border: 1px solid $inner-hover;
+		background: 0;
+		padding: 5px;
+	} // input, textarea
+
+	label {
+		display: block;
+		font-family: 'Proximanova Bold';
+		width: 100%;
+
+		@include susy-breakpoint($tablet) {
+			font-size: 18px;
+		} // $tablet
+	} // label
+
+	input {
+		display: block;
+		width: 100%;
+
+		&#Subject {
+			// float: none;
+			// width: 100%;
+		} // #Subject
+
+		&[type="submit"], &[type="reset"] {
+			@include border-radius(3px);
+			@include background(linear-gradient($blue, $dBlue));
+			color: #FFF;
+			display: inline;
+			float: none;
+			padding: 5px 10px;
+			width: auto;
+		} // &[type="submit"], &[type="reset"]
+	} // input
+
+	textarea {
+		width: 100%;
+	} // textarea
+} // .refer_form
