@@ -1,4 +1,40 @@
 .sponsors {
+	.select_tab {
+		li {
+			&.active {
+
+				a {
+					color: #FFF;
+				} // a
+				
+				&:nth-child(1) {
+					a {
+						background-color: $dTeal;
+					} // a
+				} // :nth-child(1)
+				
+				&:nth-child(2) {
+					a {
+						background-color: $dOrange;
+					} // a
+				} // :nth-child(1)
+				
+				&:nth-child(3) {
+					a {
+						background-color: $Gold;
+					} // a
+				} // :nth-child(1)
+				
+				&:nth-child(4) {
+					a {
+						background-color: $grey;
+					} // a
+				} // :nth-child(1)
+
+			} // .active
+		} // li
+	} // .select_tab
+
 	figure {
 		border-bottom: 1px dashed $grey;
 		padding: 20px 0;

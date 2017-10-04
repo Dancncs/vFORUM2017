@@ -318,7 +318,7 @@ section {} //  section
 	@include filter(drop-shadow(0px 2px 5px rgba(0,0,0,.5)));
 	display: none;
 	position: absolute;
-	top: 630px;
+	top: 480px;
 	right: 0;
 	z-index: 2;
 
@@ -326,6 +326,7 @@ section {} //  section
 		position: relative;
 
 		.sidebarHandle {
+			@include border-radius(3px 0 0 3px);
 			background-color: #0090D0;
 			cursor: pointer;
 			float: left;
@@ -338,7 +339,7 @@ section {} //  section
 				display: block;
 				position: absolute;
 				top: 8px;
-				left: 5px;
+				left: 7px;
 			} // :before
 
 			&.slideOut {

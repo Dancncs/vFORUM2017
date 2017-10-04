@@ -224,6 +224,10 @@
 		border-bottom: 1px dashed $inner-hover;
 		padding: 30px 0;
 
+		&:last-child {
+			border-bottom: 0;
+		} // :last-child
+
 		.location_date {
 			.country {
 				color: $blue;

@@ -40,7 +40,7 @@ jQuery(document).ready(function($) {
 	// Fixed Sidebar
 	$(document).scroll(function() {
 		var fixPos = $(this).scrollTop();
-		if(fixPos > 300) {
+		if(fixPos > 420) {
 			$('.sidebar').css({
 				"position": "fixed",
 				"top": "50px"
