@@ -1,4 +1,8 @@
 .programs {
+	.top_tab {
+		margin-bottom: 30px;
+	} // .select_tab
+
 	.program_wrap {
 		@include pie-clearfix;
 		margin-bottom: 40px;
@@ -42,6 +46,11 @@
 			} // .benefits_group
 		} // .benefits
 
+		.register_now {
+			display: block;
+			margin-bottom: 20px;
+		} // .register_now
+
 		@include susy-breakpoint($tablet, 6) {
 			.benefits {
 				@include pie-clearfix;
@@ -57,33 +66,13 @@
 	.special {
 		.select_tab {
 			ul {
-				@include pie-clearfix;
+				@include display-flex();
 			} // ul
 
 			li {
-				background-color: transparent;
 				font-size: 11px;
-				line-height: 1;
 				text-align: center;
-				width: (100%/4);
-
-				&:nth-child(1) {
-					a {
-						padding-bottom: 28px;
-					} // a
-				} // :nth-child(1)
-
-				&:nth-child(3) {
-					a {
-						padding-bottom: 16px;
-					} // a
-				} // :nth-child(3)
-
-				&:nth-child(4) {
-					a {
-						padding-bottom: 28px;
-					} // a
-				} // :nth-child(4)
+				line-height: 1;
 
 				&:hover {
 					a {
@@ -92,95 +81,16 @@
 				} // :hover
 			} // li
 
-			@include susy-breakpoint(387px) {
-				li {
-					&:nth-child(3) {
-						a {
-							padding-bottom: 4px;
-						} // a
-					} // :nth-child(3)
-
-					&:nth-child(4) {
-						a {
-							padding-bottom: 15px;
-						} // a
-					} // :nth-child(4)
-				} // li
-			} // bp(387px)
-
-			@include susy-breakpoint(475px) {
+			@include susy-breakpoint(540px) {
 				li {
 					font-size: 14px;
-
-					&:nth-child(1) {
-						a {
-							padding-bottom: 34px;
-						} // a
-					} // :nth-child(1)
-
-					&:nth-child(2) {
-						a {
-							padding-bottom: 20px;
-						} // a
-					} // :nth-child(2)
-
-					&:nth-child(3) {
-						a {
-							padding-bottom: 4px;
-						} // a
-					} // :nth-child(3)
-
-					&:nth-child(4) {
-						a {
-							padding-bottom: 18px;
-						} // a
-					} // :nth-child(4)
 				} // li
-			} // bp(475px)
-
-			@include susy-breakpoint(577px) {
-				li {
-					&:nth-child(3) {
-						a {
-							padding-bottom: 18px;
-						} // a
-					} // :nth-child(3)
-
-					&:nth-child(4) {
-						a {
-							padding-bottom: 32px;
-						} // a
-					} // :nth-child(4)
-				} // li
-			} // bp(577px)
+			} // bp(540px)
 
 			@include susy-breakpoint($tablet) {
 				li {
-					font-size: 16px;
-
-					&:nth-child(1) {
-						a {
-							padding-bottom: 18px;
-						} // a
-					} // :nth-child(1)
-
-					&:nth-child(2) {
-						a {
-							padding-bottom: 0;
-						} // a
-					} // :nth-child(2)
-
-					&:nth-child(3) {
-						a {
-							padding-bottom: 0;
-						} // a
-					} // :nth-child(3)
-
-					&:nth-child(4) {
-						a {
-							padding-bottom: 18px;
-						} // a
-					} // :nth-child(4)
+					font-size: 1em;
+					line-height: 1.5em;
 				} // li
 			} // bp($tablet)
 		} // .select_tab

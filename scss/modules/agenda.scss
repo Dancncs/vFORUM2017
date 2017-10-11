@@ -6,115 +6,179 @@
 			border-bottom: 1px solid $inner-hover;
 		} // tr
 
-		td {
+		th {
+			font-family: 'Proximanova Semibold';
+		} // th
+
+		td, th {
 			display: block;
 			font-size: 0.85em;
 			line-height: 1;
 			padding: 8px;
-			vertical-align: middle;
+			vertical-align: top;
 			width: 100%;
 
 			&:first-child {
 				font-family: 'Proximanova Semibold';
 			} // :first-child
-		} // td
+		} // td, th
 
 		@include susy-breakpoint($tablet, 6) {
-			td {
+			td, th {
 				display: inline-block;
 				font-size: 1em;
 				line-height: 1.5em;
 
-				&:first-child {
-					width: span(2);
-				} // :first-child
+				&:nth-child(1) {
+					width: span(1 wide);
+				} // :nth-child(1)
 
-				&:last-child {
-					width: span(4 last);
-				} // :last-child
-			} // td
+				&:nth-child(2) {
+					width: span(3);
+				} // :nth-child(2)
+
+				&:nth-child(3) {
+					width: span(2 last);
+				} // :nth-child(3)
+			} // td, th
 		} // bp($tablet)
+
+		@include susy-breakpoint($desktop, 12) {
+			td, th {
+				&:nth-child(1) {
+					width: span(2 wide);
+				} // :nth-child(1)
+
+				&:nth-child(2) {
+					width: span(7);
+				} // :nth-child(2)
+
+				&:nth-child(3) {
+					width: span(3 last);
+				} // :nth-child(3)
+			} // td, th
+
+			td {
+				&.no-contents {
+					width: span(full);
+				} // .no-contents
+			} // .td
+		} // bp($desktop)
 	} // table
 
-	.session {
-		h2 {
-			color: #FFF;
-			cursor: pointer;
-			font-size: 1em;
-			line-height: 1;
-			padding: 10px 5px;
-			position: relative;
-			width: 100%;
-
-			&:after {
-				@include transform(translateY(-50%));
-				border-left: 5px solid transparent;
-				border-right: 5px solid transparent;
-				border-top: 5px solid #FFF;
-				content: '';
-				display: inline-block;;
-				position: absolute;
-				right: 5px;
-				top: 50%;
-				width: 0;
-				height: 0;
-			} // :after
-
-			&.active {
-				&:after {
-					border-left: 5px solid transparent;
-					border-right: 5px solid transparent;
-					border-bottom: 5px solid #FFF;
-					border-top: none;
-				} // :after
-			} // .active
-
-			&.s1 {
-				background: $teal;
-			} // .s1
-
-			&.s2 {
-				background: $plum;
-			} // .s2
-
-			&.s3 {
-				background: $blue;
-			} // .s3
-
-			&.s4 {
-				background: $green;
-			} // .s4
-
-			&.s5 {
-				background: $dBlue;
-			} // .s5
-
-			&.s6 {
-				background: $lGreen;
-			} // .s6
-		} // h2
-
-		@include susy-breakpoint($tablet, 6) {
-			h2 {
-				text-align: center;
-			} // h2
-
-			table {
-				td {
-					font-family: 'Proximanova';
-					width: 100%;
-				} // td
-			} // table
-		} // bp($tablet)
-	} // .session
-
 	.open {
+		margin-bottom: 40px;
+
 		table {
 			tr {
+				&:first-child {
+					background-color: $Gold;
+					color: #000;
+					text-align: left;
+				} // :first-child
+
 				&:nth-child(even) {
 					background: lighten($inner-hover, 15);
 				} // :nth-child(even)
 			} // tr
 		} //table
 	} // .open
+
+	.breakout {
+		.select_tab {
+			ul {
+				@include display-flex();
+				border-bottom: 0;
+			} // ul
+
+			li {
+				background-color: lighten($plum, 48);
+				border-bottom: 1px solid $inner-hover;
+				font-size: 10px;
+				text-align: center;
+				line-height: 1;
+				margin-bottom: 0;
+
+				&:nth-child(5) {
+					background-color: lighten($crimson, 40);
+				} // :nth-child(5)
+
+				&:hover, &.active {
+					&:nth-child(1) {
+						background-color: $dOrange;
+					} // :nth-child(1)
+
+					&:nth-child(2) {
+						background-color: $dGreen;
+					} // :nth-child(1)
+
+					&:nth-child(3) {
+						background-color: $dPlum;
+					} // :nth-child(1)
+
+					&:nth-child(4) {
+						background-color: $dGold;
+					} // :nth-child(1)
+
+					&:nth-child(5) {
+						background-color: $dTeal;
+					} // :nth-child(1)
+
+					a {
+						color: #FFF;
+					} // a
+				} // :hover, .active
+
+				&.active {
+					border: 1px solid $inner-hover;
+					border-bottom: 0;
+				} // .active
+			} // li
+
+			@include susy-breakpoint(540px) {
+				li {
+					font-size: 14px;
+				} // li
+			} // bp(540px)
+
+			@include susy-breakpoint($tablet) {
+				li {
+					font-size: 1em;
+					line-height: 1.5em;
+				} // li
+			} // bp($tablet)
+		} // .select_tab
+	} // .breakout
+
+// ToolTip
+	.hide-me {
+		display: none;
+
+		h4 {
+			font-size: 1em;
+		} // h4
+
+		p {
+			font-size: 14px;
+		} // p
+	} // .hide-me
+
+	@include susy-breakpoint(960px) {
+		.hasTooltip {
+			&:after {
+				@include opacity(0.45);
+				background: {
+					image: image-url('tooltip.png', false, false);
+					position: center center;
+					repeat: no-repeat;
+					size: 100%;
+				} // background
+				content: "";
+				display: inline-block;
+				width: 12px;
+				height: 12px;
+				margin: 3px 0 0 10px;
+			} // :after
+		} // .hasTooltip
+	} // bp(960px)
 } // .agenda

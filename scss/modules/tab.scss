@@ -1,4 +1,4 @@
-.select_tab {
+.select_tab, .top_tab {
 	ul {
 		@include pie-clearfix;
 		border-bottom: 1px solid $inner-hover;
@@ -6,9 +6,8 @@
 
 	li {
 		@include transition(all .35s ease-in-out);
-		// background-color: lighten($inner-hover, 10);
 		float: left;
-		margin-bottom: -2px;
+		margin-bottom: -1px;
 
 		a {
 			@include transition(all .35s ease-in-out);
@@ -21,10 +20,14 @@
 		} // :hover
 
 		&.active {
+			background-color: #FFF;
+			border: 1px solid $inner-hover;
+			border-bottom-width: 0;
+			// border-bottom-color: transparent;
 			a {
-				background-color: #FFF;
-				border: 1px solid $inner-hover;
-				border-bottom-color: transparent;
+				// background-color: #FFF;
+				// border: 1px solid $inner-hover;
+				// border-bottom-color: transparent;
 				color: $blue;
 			} // a
 		} // .active
@@ -37,4 +40,4 @@
 			} // a
 		} // li
 	} // bp($tablet)
-} // .select_tab
+} // .select_tab, .top_tab

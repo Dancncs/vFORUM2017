@@ -66,6 +66,10 @@ table {
 	width: 100%;
 } // table
 
+.clear {
+	@include pie-clearfix;
+} // .clear
+
 .register_now {
 	@include transition(all .35s ease-in-out);
 	@include border-radius(3px);

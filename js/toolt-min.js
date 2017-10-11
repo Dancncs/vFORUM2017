@@ -1,0 +1,1 @@
+jQuery(document).ready(function($){var t=$(".hasTooltip");$(window).width()<960?t.qtip("destroy",!0):t.each(function(){$(this).qtip({content:{text:$(this).next("div")},style:{classes:"qtip-bootstrap"},position:{my:"top left",at:"bottom right",target:"mouse"}})})});

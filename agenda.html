@@ -57,6 +57,7 @@
   
   <!--ls:begin[head-injection]--><meta content='width=device-width, initial-scale=1' name='viewport'><!--ls:end[head-injection]-->
 
+	<link rel="stylesheet" href="css/jquery.qtip.css">
 	<link rel="stylesheet" href="css/screen.css" />
 
 	<!--[if lt IE 9]>
@@ -166,73 +167,121 @@
 					<div class="open">
 						<table>
 							<tr>
+								<th>TIME</th>
+								<th>PROGRAMS</th>
+								<th>SPEAKER(S)</th>
+							</tr>
+							<tr>
 								<td>7:30am - 8:55 am</td>
-								<td>Registration and Solution Exchange Visit</td>
+								<td>
+									<div class="hasTooltip">Registration and Solution Exchange Visit</div>
+									<div class="triangle-isosceles hide-me">
+										<h4>Topic</h4>
+										<p>
+											Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Eli
+										</p>
+										<h4>Synopsis</h4>
+										<p>
+											Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+										</p>
+									</div>
+								</td>
+								<td>
+									<div class="hasTooltip">Name of Speaker(s)</div>
+									<div class="triangle-isosceles hide-me">
+										<img src="http://www.dummyimage.com/180x180/cccccc/000000.jpg&text=Place+Holder" alt="">
+										<p>
+											<b>Speaker Name</b><br>
+											Job Title
+										</p>
+										<p>
+											Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+										</p>
+									</div>
+								</td>
 							</tr>
 							<tr>
 								<td>8:55am - 9:10am</td>
 								<td>Opening Video</td>
+								<td>Name of Speaker(s)</td>
 							</tr>
 							<tr>
 								<td>9:10am - 10:40am</td>
 								<td>Keynote 1</td>
+								<td>Name of Speaker(s)</td>
 							</tr>
 							<tr>
 								<td>10:40am - 11:10am</td>
 								<td>Keynote 2</td>
+								<td>Name of Speaker(s)</td>
 							</tr>
 							<tr>
 								<td>11:10am - 12:30pm</td>
 								<td>Lunch &amp; Solutions Exchange Visit</td>
+								<td>Name of Speaker(s)</td>
 							</tr>
 						</table>
 					</div>
-					<div class="session">
-						<h2 class="s1">Transform Networking &amp; Security</h2>
-						<div class="tableWrap">
+					<div class="breakout">
+						<nav class="select_tab">
+							<ul>
+								<li class="active"><a href="#s1" data-target="s1">Expert-Led Design Workshop</a></li>
+								<li><a href="#s2" data-target="s2">Empower Digital Workspace</a></li>
+								<li><a href="#s3" data-target="s3">Modernize Data Center</a></li>
+								<li><a href="#s4" data-target="s4">Integrate Public Cloud</a></li>
+								<li><a href="#s5" data-target="s5">NFV Forum</a></li>
+							</ul>
+						</nav>
+						
+						<div id="s1" class="group show">
 							<table>
 								<tr>
-									<td>Come back for latest update.</td>
+									<td>7:30am - 8:55 am</td>
+									<td>Registration and Solution Exchange Visit</td>
+								</tr>
+								<tr>
+									<td>8:55am - 9:10am</td>
+									<td>Opening Video</td>
+								</tr>
+								<tr>
+									<td>9:10am - 10:40am</td>
+									<td>Keynote 1</td>
+								</tr>
+								<tr>
+									<td>10:40am - 11:10am</td>
+									<td>Keynote 2</td>
+								</tr>
+								<tr>
+									<td>11:10am - 12:30pm</td>
+									<td>Lunch &amp; Solutions Exchange Visit</td>
 								</tr>
 							</table>
 						</div>
-					</div>
-					<div class="session">
-						<h2 class="s2">Empower Digital Workspace</h2>
-						<div class="tableWrap">
+						<div id="s2" class="group">
 							<table>
 								<tr>
-									<td>Come back for latest update.</td>
+									<td class="no-contents">Come back for latest update.</td>
 								</tr>
 							</table>
 						</div>
-					</div>
-					<div class="session">
-						<h2 class="s3">Modernize Data Center</h2>
-						<div class="tableWrap">
+						<div id="s3" class="group">
 							<table>
 								<tr>
-									<td>Come back for latest update.</td>
+									<td class="no-contents">Come back for latest update.</td>
 								</tr>
 							</table>
 						</div>
-					</div>
-					<div class="session">
-						<h2 class="s4">Integrate Public Cloud</h2>
-						<div class="tableWrap">
+						<div id="s4" class="group">
 							<table>
 								<tr>
-									<td>Come back for latest update.</td>
+									<td class="no-contents">Come back for latest update.</td>
 								</tr>
 							</table>
 						</div>
-					</div>
-					<div class="session">
-						<h2 class="s5">NFV Forum</h2>
-						<div class="tableWrap">
+						<div id="s5" class="group">
 							<table>
 								<tr>
-									<td>Come back for latest update.</td>
+									<td class="no-contents">Come back for latest update.</td>
 								</tr>
 							</table>
 						</div>
@@ -286,7 +335,9 @@
 	</footer>
 
 	<script src="js/nav.js"></script>
-	<script src="js/agenda.js"></script>
+	<script src="js/tab.js"></script>
+	<script src="js/jquery.qtip.js"></script>
+	<script src="js/toolt.js"></script>
 
 </body>
 </html>

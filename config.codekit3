@@ -4308,6 +4308,16 @@
 		"oF": 0,
 		"oS": 3
 		},
+	"\/css\/jquery.qtip.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/css\/jquery.qtip-min.css",
+		"oF": 0,
+		"oS": 3
+		},
 	"\/css\/screen.css": {
 		"aP": 1,
 		"bl": 0,
@@ -4488,7 +4498,7 @@
 		"oAP": "\/images\/gallery\/CHR_0012.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"\/images\/gallery\/crowd.jpg": {
@@ -4553,7 +4563,7 @@
 		},
 	"\/images\/gallery\/VForum-1189.jpeg": {
 		"ft": 16384,
-		"iS": 391096,
+		"iS": 322457,
 		"oA": 0,
 		"oAP": "\/images\/gallery\/VForum-1189.jpg",
 		"oF": 0,
@@ -4598,7 +4608,7 @@
 		"oAP": "\/images\/gallery_img_10.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"\/images\/gallery_img_11.jpg": {
@@ -4618,7 +4628,7 @@
 		"oAP": "\/images\/gallery_img_2.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"\/images\/gallery_img_3.jpg": {
@@ -4648,7 +4658,7 @@
 		"oAP": "\/images\/gallery_img_5.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"\/images\/gallery_img_6.jpg": {
@@ -4678,7 +4688,7 @@
 		"oAP": "\/images\/gallery_img_8.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"\/images\/gallery_img_9.jpg": {
@@ -4969,6 +4979,17 @@
 		"opt": 0,
 		"q": 100
 		},
+	"\/images\/tooltip.png": {
+		"ft": 32768,
+		"iS": 636,
+		"oA": 0,
+		"oAP": "\/images\/tooltip.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
 	"\/images\/vmbrand.png": {
 		"ft": 32768,
 		"iS": 3972,
@@ -5022,6 +5043,16 @@
 		"mi": 1,
 		"oA": 0,
 		"oAP": "\/js\/flipclock-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/js\/jquery.qtip.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/js\/jquery.qtip-min.js",
 		"oF": 0,
 		"sC": 3,
 		"tS": 0
@@ -5086,11 +5117,49 @@
 		"sC": 3,
 		"tS": 0
 		},
+	"\/js\/toolt-min.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/js\/toolt-min-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/js\/toolt.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/js\/toolt-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
 	"\/programs.html": {
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/programs.html",
 		"oF": 0
+		},
+	"\/README.md": {
+		"cS": 0,
+		"eF": 1,
+		"eL": 1,
+		"eLB": 0,
+		"ema": 1,
+		"eSQ": 1,
+		"ft": 4096,
+		"oA": 0,
+		"oAP": "\/README.html",
+		"oF": 0,
+		"oFM": 0,
+		"oS": 0,
+		"pHT": 0,
+		"pME": 1,
+		"rFN": 0,
+		"uCM": 0
 		},
 	"\/refer-a-colleague.html": {
 		"ft": 8192,
@@ -6730,7 +6799,7 @@
 	"externalServerAddress": "http:\/\/localhost:8888",
 	"gitIgnoreBuildFolder": 1,
 	"hideConfigFile": 0,
-	"jsCheckerReservedNamesString": "",
+	"jsCheckerReservedNamesString": "jQuery",
 	"jsHintFlags2": {
 		"asi": {
 			"active": 0,
