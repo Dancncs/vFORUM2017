@@ -130,7 +130,9 @@
 
 			img {
 				@include border-radius(3px);
-				max-width: 320px;
+				@include box-shadow(1px 1px 3px rgba(#000, 0.45));
+				max-width: 200px;
+				margin-bottom: 15px;
 			} // img
 		} // .special_containers
 	} // .special

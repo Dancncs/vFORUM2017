@@ -790,8 +790,7 @@ table {
     .pageWrap .content-header .page_title {
       color: #363635;
       font-family: Proximanova;
-      font-size: 2.5em;
-      text-transform: uppercase; }
+      font-size: 2.5em; }
   .pageWrap .full_txt h3 {
     margin-bottom: 20px; }
   @media (min-width: 768px) {
@@ -1479,7 +1478,11 @@ button.mfp-close {
     -moz-border-radius: 3px;
     -webkit-border-radius: 3px;
     border-radius: 3px;
-    max-width: 320px; }
+    -moz-box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.45);
+    -webkit-box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.45);
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.45);
+    max-width: 200px;
+    margin-bottom: 15px; }
 .programs .detail_wrap {
   border-bottom: 1px dashed #CCC;
   padding: 30px 0; }
