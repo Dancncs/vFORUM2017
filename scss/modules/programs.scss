@@ -127,6 +127,11 @@
 			small {
 				font-size: 11px;
 			} // small
+
+			img {
+				@include border-radius(3px);
+				max-width: 320px;
+			} // img
 		} // .special_containers
 	} // .special
 

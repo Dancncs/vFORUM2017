@@ -1475,6 +1475,11 @@ button.mfp-close {
     display: inline-block; }
   .programs .special .special_containers small {
     font-size: 11px; }
+  .programs .special .special_containers img {
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    max-width: 320px; }
 .programs .detail_wrap {
   border-bottom: 1px dashed #CCC;
   padding: 30px 0; }
