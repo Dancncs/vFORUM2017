@@ -119,6 +119,12 @@
 				font-size: 1.25em;
 			} // h4
 
+			p {
+				b {
+					color: $blue;
+				} // b
+			} // p
+
 			a {
 				color: $blue;
 				display: inline-block;

@@ -447,7 +447,7 @@ video {
 
 img {
   display: block;
-  width: 100%;
+  max-width: 100%;
   height: auto; }
 
 strong, b {
@@ -1469,6 +1469,8 @@ button.mfp-close {
       list-style: square; }
   .programs .special .special_containers h4 {
     font-size: 1.25em; }
+  .programs .special .special_containers p b {
+    color: #0095D3; }
   .programs .special .special_containers a {
     color: #0095D3;
     display: inline-block; }
