@@ -105,19 +105,19 @@
 
 				&:hover, &.active {
 					&:nth-child(1) {
-						background-color: $dOrange;
-					} // :nth-child(1)
-
-					&:nth-child(2) {
-						background-color: $dGreen;
-					} // :nth-child(1)
-
-					&:nth-child(3) {
 						background-color: $dPlum;
 					} // :nth-child(1)
 
-					&:nth-child(4) {
+					&:nth-child(2) {
 						background-color: $dGold;
+					} // :nth-child(1)
+
+					&:nth-child(3) {
+						background-color: $dGreen;
+					} // :nth-child(1)
+
+					&:nth-child(4) {
+						background-color: $dOrange;
 					} // :nth-child(1)
 
 					&:nth-child(5) {

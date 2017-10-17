@@ -1258,13 +1258,13 @@ button.mfp-close {
   .agenda .breakout .select_tab li:nth-child(5) {
     background-color: #f9e5e3; }
   .agenda .breakout .select_tab li:hover:nth-child(1), .agenda .breakout .select_tab li.active:nth-child(1) {
-    background-color: #982304; }
-  .agenda .breakout .select_tab li:hover:nth-child(2), .agenda .breakout .select_tab li.active:nth-child(2) {
-    background-color: #76BC00; }
-  .agenda .breakout .select_tab li:hover:nth-child(3), .agenda .breakout .select_tab li.active:nth-child(3) {
     background-color: #4D1B9B; }
-  .agenda .breakout .select_tab li:hover:nth-child(4), .agenda .breakout .select_tab li.active:nth-child(4) {
+  .agenda .breakout .select_tab li:hover:nth-child(2), .agenda .breakout .select_tab li.active:nth-child(2) {
     background-color: #D06F00; }
+  .agenda .breakout .select_tab li:hover:nth-child(3), .agenda .breakout .select_tab li.active:nth-child(3) {
+    background-color: #76BC00; }
+  .agenda .breakout .select_tab li:hover:nth-child(4), .agenda .breakout .select_tab li.active:nth-child(4) {
+    background-color: #982304; }
   .agenda .breakout .select_tab li:hover:nth-child(5), .agenda .breakout .select_tab li.active:nth-child(5) {
     background-color: #007B82; }
   .agenda .breakout .select_tab li:hover a, .agenda .breakout .select_tab li.active a {
