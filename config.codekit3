@@ -4293,7 +4293,7 @@
 		"uL": 1
 		},
 	"\/config.rb": {
-		"ft": 8192,
+		"ft": 131072,
 		"oA": 0,
 		"oAP": "\/config.rb",
 		"oF": 0
@@ -4849,44 +4849,11 @@
 		"oT": 1,
 		"q": 100
 		},
-	"\/images\/sponsors_logo\/eginno.png": {
-		"ft": 32768,
-		"iS": 13041,
-		"oA": 0,
-		"oAP": "\/images\/sponsors_logo\/eginno.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"\/images\/sponsors_logo\/fortinet.png": {
-		"ft": 32768,
-		"iS": 1259,
-		"oA": 0,
-		"oAP": "\/images\/sponsors_logo\/fortinet.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
 	"\/images\/sponsors_logo\/hitachi.png": {
 		"ft": 32768,
 		"iS": 3686,
 		"oA": 0,
 		"oAP": "\/images\/sponsors_logo\/hitachi.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"\/images\/sponsors_logo\/hpe.png": {
-		"ft": 32768,
-		"iS": 5751,
-		"oA": 0,
-		"oAP": "\/images\/sponsors_logo\/hpe.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
