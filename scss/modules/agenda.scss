@@ -4,6 +4,10 @@
 
 		tr {
 			border-bottom: 1px solid $inner-hover;
+
+			&:nth-child(even) {
+				background: lighten($inner-hover, 15);
+			} // :nth-child(even)
 		} // tr
 
 		th {
@@ -76,10 +80,6 @@
 					color: #000;
 					text-align: left;
 				} // :first-child
-
-				&:nth-child(even) {
-					background: lighten($inner-hover, 15);
-				} // :nth-child(even)
 			} // tr
 		} //table
 	} // .open
@@ -98,6 +98,7 @@
 				text-align: center;
 				line-height: 1;
 				margin-bottom: 0;
+				width: (100%/5);
 
 				&:nth-child(5) {
 					background-color: lighten($crimson, 40);

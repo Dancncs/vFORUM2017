@@ -73,7 +73,8 @@ table {
 .register_now {
 	@include transition(all .35s ease-in-out);
 	@include border-radius(3px);
-	@include background(linear-gradient($blue, $dBlue));
+	// @include background(linear-gradient($blue, $dBlue));
+	background-color: $dBlue;
 	border-bottom: 2px solid $dTeal;
 	color: #FFF;
 	font-family: 'Proximanova Semibold';
