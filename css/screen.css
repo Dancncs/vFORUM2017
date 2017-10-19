@@ -954,12 +954,12 @@ footer {
     color: #FFF;
     margin-bottom: 30px; }
   .intro .event_register {
-    padding: 15px 0; }
+    padding: 15px 0;
+    text-align: center; }
     .intro .event_register .event_name_date {
       color: #FFF;
       font-family: 'Proximanova Semibold';
-      font-size: 18px;
-      text-align: center; }
+      font-size: 18px; }
       .intro .event_register .event_name_date span {
         display: block;
         font-size: 34px;
@@ -979,13 +979,12 @@ footer {
     text-decoration: underline; }
   @media (min-width: 768px) {
     .intro .event_register {
-      *zoom: 1; }
+      *zoom: 1;
+      text-align: left; }
       .intro .event_register:after {
         content: "";
         display: table;
         clear: both; }
-      .intro .event_register .event_name_date {
-        text-align: left; }
       .intro .event_register .register_now {
         margin: 0; }
     .intro .intro_txt {

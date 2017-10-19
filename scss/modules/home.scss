@@ -53,6 +53,7 @@
 
 	.event_register {
 		padding: 15px 0;
+		text-align: center;
 
 		.event_name_date {
 			color: #FFF;
@@ -60,7 +61,6 @@
 				family: 'Proximanova Semibold';
 				size: 18px;
 			} // font
-			text-align: center;
 
 			span {
 				display: block;
@@ -98,10 +98,9 @@
 	@include susy-breakpoint($tablet, 6) {
 		.event_register {
 			@include pie-clearfix;
+			text-align: left;
 
-			.event_name_date {
-				text-align: left;
-			} // .event_name_date
+			.event_name_date {} // .event_name_date
 
 			.register_now {
 				margin: 0;
