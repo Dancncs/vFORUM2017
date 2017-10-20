@@ -3,6 +3,109 @@
 		margin-bottom: 30px;
 	} // .select_tab
 
+	#hol {
+		/* Force table to not be like tables anymore */
+		table, thead, tbody, th, td, tr { 
+			display: block; 
+		}
+		
+		/* Hide table headers (but not display: none;, for accessibility) */
+		thead tr, .thead { 
+			position: absolute;
+			top: -9999px;
+			left: -9999px;
+		}
+		
+		tr {
+			border: 1px solid #ccc; 
+		}
+		
+		td { 
+			/* Behave  like a "row" */
+			border: none;
+			border-bottom: 1px solid #eee; 
+			position: relative;
+			padding-left: 35%; 
+		}
+		
+		td:before { 
+			/* Now like a table header */
+			position: absolute;
+			/* Top/left values mimic padding */
+			top: 6px;
+			left: 6px;
+			width: 40%; 
+			padding-right: 10px; 
+			white-space: nowrap;
+		}
+		
+		/*
+		Label the data
+		*/
+		td:nth-of-type(1):before { content: "Lab SKU"; }
+		td:nth-of-type(2):before { content: "Lab Title"; }
+		td:nth-of-type(3):before { content: "Description"; }
+		td:nth-of-type(4):before { content: "Lab Family"; }
+
+		@include susy-breakpoint($desktop, 12) {
+			table, thead, tbody, th, td, tr, .thead { 
+				display: inline-block;
+				text-align: left;
+				width: 100%;
+			}
+			
+			/* Hide table headers (but not display: none;, for accessibility) */
+			thead tr, .thead { 
+				position: inherit;
+				// top: 0;
+				// left: 0;
+			}
+			
+			tr {
+				border: none;
+				border-bottom: 1px solid $inner-hover;
+
+				&:first-child {
+					background-color: $teal;
+					color: #FFF;
+					text-transform: uppercase;
+				} // :first-child
+
+				&:nth-child(even) {
+					background: lighten($inner-hover, 15);
+				} // :nth-child(even)
+			}
+			
+			td { 
+				/* Behave  like a "row" */
+				border-bottom: none;
+				padding: 10px 0;
+			}
+			
+			td:before, .hide-in-big { 
+				display: none;
+			}
+			
+			/*
+			Label the data
+			*/
+			th:nth-of-type(1), td:nth-of-type(1) {
+				@include span(2);
+				font-family: 'Proximanova Semibold';
+				padding-left: 10px;
+			}
+			th:nth-of-type(2), td:nth-of-type(2) {
+				@include span(3);
+			}
+			th:nth-of-type(3), td:nth-of-type(3) {
+				@include span(5);
+			}
+			th:nth-of-type(4), td:nth-of-type(4) {
+				@include span(2 last);
+			}
+		} // bp($desktop)
+	} // #hol
+
 	.program_wrap {
 		@include pie-clearfix;
 		margin-bottom: 40px;

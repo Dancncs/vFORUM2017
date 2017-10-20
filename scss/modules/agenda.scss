@@ -10,10 +10,6 @@
 			} // :nth-child(even)
 		} // tr
 
-		th {
-			font-family: 'Proximanova Semibold';
-		} // th
-
 		td, th {
 			display: block;
 			font-size: 0.85em;
@@ -27,6 +23,12 @@
 			} // :first-child
 		} // td, th
 
+		th {
+			color: #FFF;
+			display: none;
+			font-family: 'Proximanova Semibold';
+		} // th
+
 		@include susy-breakpoint($tablet, 6) {
 			td, th {
 				display: inline-block;
@@ -34,32 +36,24 @@
 				line-height: 1.5em;
 
 				&:nth-child(1) {
-					width: span(1 wide);
+					width: span(2);
 				} // :nth-child(1)
 
 				&:nth-child(2) {
-					width: span(3);
+					width: span(4 last);
 				} // :nth-child(2)
-
-				&:nth-child(3) {
-					width: span(2 last);
-				} // :nth-child(3)
 			} // td, th
 		} // bp($tablet)
 
 		@include susy-breakpoint($desktop, 12) {
 			td, th {
 				&:nth-child(1) {
-					width: span(2 wide);
+					width: span(3);
 				} // :nth-child(1)
 
 				&:nth-child(2) {
-					width: span(7);
+					width: span(8 last);
 				} // :nth-child(2)
-
-				&:nth-child(3) {
-					width: span(3 last);
-				} // :nth-child(3)
 			} // td, th
 
 			td {
@@ -76,7 +70,7 @@
 		table {
 			tr {
 				&:first-child {
-					background-color: $Gold;
+					background-color: $teal;
 					color: #000;
 					text-align: left;
 				} // :first-child
@@ -89,49 +83,27 @@
 			ul {
 				@include display-flex();
 				border-bottom: 0;
+
+				a {
+					color: #FFF;
+				} // a
 			} // ul
 
 			li {
-				background-color: lighten($plum, 48);
-				border-bottom: 1px solid $inner-hover;
+				background-color: $teal;
+				border-bottom: 1px solid $dTeal;
 				font-size: 10px;
 				text-align: center;
 				line-height: 1;
 				margin-bottom: 0;
-				width: (100%/5);
-
-				&:nth-child(5) {
-					background-color: lighten($crimson, 40);
-				} // :nth-child(5)
+				width: (100%/4);
 
 				&:hover, &.active {
-					&:nth-child(1) {
-						background-color: $dPlum;
-					} // :nth-child(1)
-
-					&:nth-child(2) {
-						background-color: $dGold;
-					} // :nth-child(1)
-
-					&:nth-child(3) {
-						background-color: $dGreen;
-					} // :nth-child(1)
-
-					&:nth-child(4) {
-						background-color: $dOrange;
-					} // :nth-child(1)
-
-					&:nth-child(5) {
-						background-color: $dTeal;
-					} // :nth-child(1)
-
-					a {
-						color: #FFF;
-					} // a
+					background-color: $dTeal;
 				} // :hover, .active
 
 				&.active {
-					border: 1px solid $inner-hover;
+					border: 1px solid $dTeal;
 					border-bottom: 0;
 				} // .active
 			} // li

@@ -1202,8 +1202,6 @@ button.mfp-close {
     border-bottom: 1px solid #CCC; }
     .agenda table tr:nth-child(even) {
       background: #f2f2f2; }
-  .agenda table th {
-    font-family: 'Proximanova Semibold'; }
   .agenda table td, .agenda table th {
     display: block;
     font-size: 0.85em;
@@ -1213,60 +1211,50 @@ button.mfp-close {
     width: 100%; }
     .agenda table td:first-child, .agenda table th:first-child {
       font-family: 'Proximanova Semibold'; }
+  .agenda table th {
+    color: #FFF;
+    display: none;
+    font-family: 'Proximanova Semibold'; }
   @media (min-width: 768px) {
     .agenda table td, .agenda table th {
       display: inline-block;
       font-size: 1em;
       line-height: 1.5em; }
       .agenda table td:nth-child(1), .agenda table th:nth-child(1) {
-        width: 17.24138%; }
+        width: 31.03448%; }
       .agenda table td:nth-child(2), .agenda table th:nth-child(2) {
-        width: 48.27586%; }
-      .agenda table td:nth-child(3), .agenda table th:nth-child(3) {
-        width: 31.03448%; } }
+        width: 65.51724%; } }
   @media (min-width: 980px) {
     .agenda table td:nth-child(1), .agenda table th:nth-child(1) {
-      width: 16.94915%; }
-    .agenda table td:nth-child(2), .agenda table th:nth-child(2) {
-      width: 57.62712%; }
-    .agenda table td:nth-child(3), .agenda table th:nth-child(3) {
       width: 23.72881%; }
+    .agenda table td:nth-child(2), .agenda table th:nth-child(2) {
+      width: 66.10169%; }
     .agenda table td.no-contents {
       width: 100%; } }
 .agenda .open {
   margin-bottom: 40px; }
   .agenda .open table tr:first-child {
-    background-color: #E3B20E;
+    background-color: #039D9A;
     color: #000;
     text-align: left; }
 .agenda .breakout .select_tab ul {
   display: -webkit-flex;
   display: flex;
   border-bottom: 0; }
+  .agenda .breakout .select_tab ul a {
+    color: #FFF; }
 .agenda .breakout .select_tab li {
-  background-color: #f2ebf5;
-  border-bottom: 1px solid #CCC;
+  background-color: #039D9A;
+  border-bottom: 1px solid #007B82;
   font-size: 10px;
   text-align: center;
   line-height: 1;
   margin-bottom: 0;
-  width: 20%; }
-  .agenda .breakout .select_tab li:nth-child(5) {
-    background-color: #f9e5e3; }
-  .agenda .breakout .select_tab li:hover:nth-child(1), .agenda .breakout .select_tab li.active:nth-child(1) {
-    background-color: #4D1B9B; }
-  .agenda .breakout .select_tab li:hover:nth-child(2), .agenda .breakout .select_tab li.active:nth-child(2) {
-    background-color: #D06F00; }
-  .agenda .breakout .select_tab li:hover:nth-child(3), .agenda .breakout .select_tab li.active:nth-child(3) {
-    background-color: #76BC00; }
-  .agenda .breakout .select_tab li:hover:nth-child(4), .agenda .breakout .select_tab li.active:nth-child(4) {
-    background-color: #982304; }
-  .agenda .breakout .select_tab li:hover:nth-child(5), .agenda .breakout .select_tab li.active:nth-child(5) {
+  width: 25%; }
+  .agenda .breakout .select_tab li:hover, .agenda .breakout .select_tab li.active {
     background-color: #007B82; }
-  .agenda .breakout .select_tab li:hover a, .agenda .breakout .select_tab li.active a {
-    color: #FFF; }
   .agenda .breakout .select_tab li.active {
-    border: 1px solid #CCC;
+    border: 1px solid #007B82;
     border-bottom: 0; }
 @media (min-width: 540px) {
   .agenda .breakout .select_tab li {
@@ -1385,6 +1373,88 @@ button.mfp-close {
 
 .programs .top_tab {
   margin-bottom: 30px; }
+.programs #hol {
+  /* Force table to not be like tables anymore */
+  /* Hide table headers (but not display: none;, for accessibility) */
+  /*
+  Label the data
+  */ }
+  .programs #hol table, .programs #hol thead, .programs #hol tbody, .programs #hol th, .programs #hol td, .programs #hol tr {
+    display: block; }
+  .programs #hol thead tr, .programs #hol .thead {
+    position: absolute;
+    top: -9999px;
+    left: -9999px; }
+  .programs #hol tr {
+    border: 1px solid #ccc; }
+  .programs #hol td {
+    /* Behave  like a "row" */
+    border: none;
+    border-bottom: 1px solid #eee;
+    position: relative;
+    padding-left: 35%; }
+  .programs #hol td:before {
+    /* Now like a table header */
+    position: absolute;
+    /* Top/left values mimic padding */
+    top: 6px;
+    left: 6px;
+    width: 40%;
+    padding-right: 10px;
+    white-space: nowrap; }
+  .programs #hol td:nth-of-type(1):before {
+    content: "Lab SKU"; }
+  .programs #hol td:nth-of-type(2):before {
+    content: "Lab Title"; }
+  .programs #hol td:nth-of-type(3):before {
+    content: "Description"; }
+  .programs #hol td:nth-of-type(4):before {
+    content: "Lab Family"; }
+  @media (min-width: 980px) {
+    .programs #hol {
+      /* Hide table headers (but not display: none;, for accessibility) */
+      /*
+      Label the data
+      */ }
+      .programs #hol table, .programs #hol thead, .programs #hol tbody, .programs #hol th, .programs #hol td, .programs #hol tr, .programs #hol .thead {
+        display: inline-block;
+        text-align: left;
+        width: 100%; }
+      .programs #hol thead tr, .programs #hol .thead {
+        position: inherit; }
+      .programs #hol tr {
+        border: none;
+        border-bottom: 1px solid #CCC; }
+        .programs #hol tr:first-child {
+          background-color: #039D9A;
+          color: #FFF;
+          text-transform: uppercase; }
+        .programs #hol tr:nth-child(even) {
+          background: #f2f2f2; }
+      .programs #hol td {
+        /* Behave  like a "row" */
+        border-bottom: none;
+        padding: 10px 0; }
+      .programs #hol td:before, .programs #hol .hide-in-big {
+        display: none; }
+      .programs #hol th:nth-of-type(1), .programs #hol td:nth-of-type(1) {
+        width: 15.25424%;
+        float: left;
+        margin-right: 1.69492%;
+        font-family: 'Proximanova Semibold';
+        padding-left: 10px; }
+      .programs #hol th:nth-of-type(2), .programs #hol td:nth-of-type(2) {
+        width: 23.72881%;
+        float: left;
+        margin-right: 1.69492%; }
+      .programs #hol th:nth-of-type(3), .programs #hol td:nth-of-type(3) {
+        width: 40.67797%;
+        float: left;
+        margin-right: 1.69492%; }
+      .programs #hol th:nth-of-type(4), .programs #hol td:nth-of-type(4) {
+        width: 15.25424%;
+        float: right;
+        margin-right: 0; } }
 .programs .program_wrap {
   *zoom: 1;
   margin-bottom: 40px; }
