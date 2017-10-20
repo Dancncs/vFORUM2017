@@ -93,7 +93,10 @@
 				background-color: $teal;
 				border-bottom: 1px solid $dTeal;
 				font-size: 10px;
-				text-align: center;
+				text: {
+					align: center;
+					transform: uppercase;
+				} // text
 				line-height: 1;
 				margin-bottom: 0;
 				width: (100%/4);
