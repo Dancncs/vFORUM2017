@@ -4,12 +4,14 @@ jQuery(document).ready(function($) {
 			agenda = $('.session .tableWrap');
 
 	agenda.hide();
-	tab.click(function() {
+	tab.click(function () {
 		var elem = $(this).next(agenda);
-		agenda.not(elem).slideUp();
-		tab.removeClass("active");
-		$(this).addClass("active");
-		elem.slideToggle();
+	  if (!$(this).hasClass("active")) { // If clicked div doesn't have class "active"
+	    agenda.slideUp("slow"); // Moved for smoother slide animations
+	    tab.removeClass("active");
+	    $(this).addClass("active");
+	    elem.slideToggle();
+	  }
 	});
 
 });

@@ -65,7 +65,7 @@
 	} // table
 
 	.open {
-		margin-bottom: 40px;
+		// margin-bottom: 40px;
 
 		table {
 			tr {
@@ -79,51 +79,88 @@
 	} // .open
 
 	.breakout {
-		.select_tab {
-			ul {
-				@include display-flex();
-				border-bottom: 0;
+		h2 {
+			background-color: $teal;
+			border-bottom: 2px solid #FFF;
+			color: #FFF;
+			cursor: pointer;
+			font-size: 1em;
+			line-height: 1;
+			padding: 10px 5px;
+			position: relative;
+			width: 100%;
 
-				a {
-					color: #FFF;
-				} // a
-			} // ul
+			&:after {
+				@include transition(all .35s ease-in-out);
+				@include transform(translateY(-50%));
+				border-left: 5px solid transparent;
+				border-right: 5px solid transparent;
+				border-top: 5px solid #FFF;
+				content: '';
+				display: inline-block;
+				position: absolute;
+				right: 5px;
+				top: 50%;
+				width: 0;
+				height: 0;
+			} // :after
 
-			li {
-				background-color: $teal;
-				border-bottom: 1px solid $dTeal;
-				font-size: 10px;
-				text: {
-					align: center;
-					transform: uppercase;
-				} // text
-				line-height: 1;
-				margin-bottom: 0;
-				width: (100%/4);
+			&.active {
+				background-color: $dTeal;
 
-				&:hover, &.active {
-					background-color: $dTeal;
-				} // :hover, .active
+				&:after {
+					border-left: 5px solid transparent;
+					border-right: 5px solid transparent;
+					border-bottom: 5px solid #FFF;
+					border-top: none;
+				} // :after
+			} // .active
+		} // h2
+		// .select_tab {
+		// 	ul {
+		// 		@include display-flex();
+		// 		border-bottom: 0;
 
-				&.active {
-					border: 1px solid $dTeal;
-					border-bottom: 0;
-				} // .active
-			} // li
+		// 		a {
+		// 			color: #FFF;
+		// 		} // a
+		// 	} // ul
 
-			@include susy-breakpoint(540px) {
-				li {
-					font-size: 14px;
-				} // li
-			} // bp(540px)
+		// 	li {
+		// 		background-color: $teal;
+		// 		border-bottom: 1px solid $dTeal;
+		// 		font-size: 10px;
+		// 		text: {
+		// 			align: center;
+		// 			transform: uppercase;
+		// 		} // text
+		// 		line-height: 1;
+		// 		margin-bottom: 0;
+		// 		width: (100%/4);
 
-			@include susy-breakpoint($tablet) {
-				li {
-					font-size: 1em;
-					line-height: 1.5em;
-				} // li
-			} // bp($tablet)
-		} // .select_tab
+		// 		&:hover, &.active {
+		// 			background-color: $dTeal;
+		// 		} // :hover, .active
+
+		// 		&.active {
+		// 			border: 1px solid $dTeal;
+		// 			border-bottom: 0;
+		// 		} // .active
+		// 	} // li
+
+		// 	@include susy-breakpoint(540px) {
+		// 		li {
+		// 			font-size: 14px;
+		// 		} // li
+		// 	} // bp(540px)
+
+		// 	@include susy-breakpoint($tablet) {
+		// 		li {
+		// 			font-size: 1em;
+		// 			line-height: 1.5em;
+		// 		} // li
+		// 	} // bp($tablet)
+		// } // .select_tab
 	} // .breakout
 
 // ToolTip

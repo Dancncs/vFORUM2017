@@ -1,1 +1,1 @@
-jQuery(document).ready(function($){var e=$(".session h2"),s=$(".session .tableWrap");s.hide(),e.click(function(){var i=$(this).next(s);s.not(i).slideUp(),e.removeClass("active"),$(this).addClass("active"),i.slideToggle()})});
+jQuery(document).ready(function($){var s=$(".session h2"),e=$(".session .tableWrap");e.hide(),s.click(function(){var i=$(this).next(e);$(this).hasClass("active")||(e.slideUp("slow"),s.removeClass("active"),$(this).addClass("active"),i.slideToggle())})});

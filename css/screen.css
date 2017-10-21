@@ -1231,39 +1231,46 @@ button.mfp-close {
       width: 66.10169%; }
     .agenda table td.no-contents {
       width: 100%; } }
-.agenda .open {
-  margin-bottom: 40px; }
-  .agenda .open table tr:first-child {
-    background-color: #039D9A;
-    color: #000;
-    text-align: left; }
-.agenda .breakout .select_tab ul {
-  display: -webkit-flex;
-  display: flex;
-  border-bottom: 0; }
-  .agenda .breakout .select_tab ul a {
-    color: #FFF; }
-.agenda .breakout .select_tab li {
+.agenda .open table tr:first-child {
   background-color: #039D9A;
-  border-bottom: 1px solid #007B82;
-  font-size: 10px;
-  text-align: center;
-  text-transform: uppercase;
+  color: #000;
+  text-align: left; }
+.agenda .breakout h2 {
+  background-color: #039D9A;
+  border-bottom: 2px solid #FFF;
+  color: #FFF;
+  cursor: pointer;
+  font-size: 1em;
   line-height: 1;
-  margin-bottom: 0;
-  width: 25%; }
-  .agenda .breakout .select_tab li:hover, .agenda .breakout .select_tab li.active {
+  padding: 10px 5px;
+  position: relative;
+  width: 100%; }
+  .agenda .breakout h2:after {
+    -moz-transition: all 0.35s ease-in-out;
+    -o-transition: all 0.35s ease-in-out;
+    -webkit-transition: all 0.35s ease-in-out;
+    transition: all 0.35s ease-in-out;
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid #FFF;
+    content: '';
+    display: inline-block;
+    position: absolute;
+    right: 5px;
+    top: 50%;
+    width: 0;
+    height: 0; }
+  .agenda .breakout h2.active {
     background-color: #007B82; }
-  .agenda .breakout .select_tab li.active {
-    border: 1px solid #007B82;
-    border-bottom: 0; }
-@media (min-width: 540px) {
-  .agenda .breakout .select_tab li {
-    font-size: 14px; } }
-@media (min-width: 768px) {
-  .agenda .breakout .select_tab li {
-    font-size: 1em;
-    line-height: 1.5em; } }
+    .agenda .breakout h2.active:after {
+      border-left: 5px solid transparent;
+      border-right: 5px solid transparent;
+      border-bottom: 5px solid #FFF;
+      border-top: none; }
 .agenda .hide-me {
   display: none; }
   .agenda .hide-me h4 {

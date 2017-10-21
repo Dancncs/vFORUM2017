@@ -31,7 +31,7 @@ jQuery(document).ready(function($) {
 		// 'showSeconds': false,
 		'callbacks': {
 			'stop': function() {
-	        		
+				$('.countdown').fadeOut();
 			}
 		}
 	});
