@@ -1431,14 +1431,15 @@ button.mfp-close {
       .programs #hol thead tr, .programs #hol .thead {
         position: inherit; }
       .programs #hol tr {
-        border: none;
-        border-bottom: 1px solid #CCC; }
+        border: none; }
         .programs #hol tr:first-child {
           background-color: #039D9A;
           color: #FFF;
           text-transform: uppercase; }
         .programs #hol tr:nth-child(even) {
-          background: #f2f2f2; }
+          background: whitesmoke; }
+        .programs #hol tr.new_family {
+          border-top: 3px solid #CCC; }
       .programs #hol td {
         /* Behave  like a "row" */
         border-bottom: none;

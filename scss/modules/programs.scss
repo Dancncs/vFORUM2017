@@ -63,7 +63,7 @@
 			
 			tr {
 				border: none;
-				border-bottom: 1px solid $inner-hover;
+				// border-bottom: 1px solid $inner-hover;
 
 				&:first-child {
 					background-color: $teal;
@@ -72,8 +72,12 @@
 				} // :first-child
 
 				&:nth-child(even) {
-					background: lighten($inner-hover, 15);
+					background: lighten($inner-hover, 16);
 				} // :nth-child(even)
+
+				&.new_family {
+					border-top: 3px solid $inner-hover;
+				} // .new_family
 			}
 			
 			td { 
